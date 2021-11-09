@@ -17,8 +17,6 @@ class Trader(NPC):
         
 class RandomWeapon(NPC):
     def __init__(self):
-        self.name = "Random Weapon"
-        self.spaceCred = 10000
         self.inventory = [items.Wrench(),
                           items.WeldingLaser(),
                           items.Phaser(),
@@ -26,7 +24,5 @@ class RandomWeapon(NPC):
         
 class RandomHeals(NPC):
     def __init__(self):
-        self.name = "Random Healing"
-        self.spaceCred = 10000
         self.inventory = [items.Bandaid(),
                           items.HealingStim()]
