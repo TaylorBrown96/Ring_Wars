@@ -192,7 +192,8 @@ class BossRoom(MapTile):
     def __init__(self, x, y):
         self.enemy= enemies.MotherAlien()
         self.alive_text = "A pissed off alien four times the size of a worker alien drops down from the ceiling. \nShe looks pissed that you have killed her babies."
-        self.dead_text = "The corpse of the mother alien lies on the ground you see something shinny in her mouth.\n\nIt's a Key!\nYou place the key in the door and it opens the way to the escape pods"
+        self.dead_text = "The corpse of the mother alien lies on the ground you see something shinny in her mouth.\n\nIt's a Key!\n\
+                          You place the key in the door and it opens the way to the escape pods"
 
         super().__init__(x, y)
         
