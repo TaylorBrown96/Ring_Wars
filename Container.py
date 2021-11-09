@@ -3,7 +3,7 @@
 # These will be the attempts made and shall be used with a test code feature.
 
 
-from item import Item
+from item import BaseItem
 
 class Container: 
     """This is the class that hands collection of items"""
