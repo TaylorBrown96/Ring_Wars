@@ -160,15 +160,15 @@ class deadBody(Container):
         
 class briefCase(Container):
     def __init__(self,name,description)
-    self.contents = [Argentinan Peso(),
-                     Nuclear Codes(),
-                     Mission Documents(),
-                     Agent ID Badge(),
-                     Spare Pistol Clip(),
-                     Passport(),
-                     Strange Transmittor()]
-    self.open = False
-    self.enteratable = False
+        self.contents = [Argentinan Peso(),
+                         Nuclear Codes(),
+                         Mission Documents(),
+                         Agent ID Badge(),
+                         Spare Pistol Mag(),
+                         Passport(),
+                         Strange Transmittor()]
+        self.open = False
+        self.enteratable = False
    
         
     
