@@ -1,6 +1,6 @@
 #This is the item class for creating items.
 
-class BaseItem:
+class Item:
     """
     Items are found in rooms, or in the player inventory.
     (Possibly we'll change that to being found in Container objects?)
@@ -50,19 +50,13 @@ class BaseItem:
         """This will be the true/false setting for if an item can be dropped
             or not"""
         self._canDrop = setting
-    
-class Item(BaseItem):
-    """This is the class that will inherit from the BaseItem"""
-    def __init__(self, name, description):
-        #Super is the override for equvilant functions.
-        super().__init__(name, description)
         
 class ConsumableItem(Item):
     """This is the function that will inherit from the Item class, and 
         should have a limit to what it can do"""
     
     def __init__(self, name, description):
-            super().__init__(name, description)
+        super().__init__(name, description)
             
         
     def consumableCount():
@@ -126,6 +120,21 @@ class EquiptableItem(Item):
              self.wearable = True
              self.concealed = False
              self.fixed = False
+            
+class LlamaPistol(EquiptableItem):
+    def __init__(self, name, description):
+       self.wearable = True
+       self.concealed = True
+       self.fixed = False
+       self.ammo = 12
+       self.damage = 20
+        
+class SurvivalKnife(EquiptableItem):
+    def __init__(self,name,decription):
+        self.wearable = True
+        self.concealed = True
+        self.fixed = False
+        self.damage = 10
     
 class Container(UseableItem, EquiptableItem):
     """The main holding container class that can be holding either useable,
@@ -137,6 +146,18 @@ class Container(UseableItem, EquiptableItem):
          self.locked = False
          self.key = False
          self.enterable = False
+        
+class lockedDoor(Container):
+    def __init__(self,name,description):
+        self.open = False
+        self.locked = True
+        self.key = True
+        self.enterable = True
+        
+class deadBody(Container):
+    def __init__(self,name,descripton)
+        self.contents = [keyCard]
+        
     
 def main():
         smallKey = Item("small key", "A small key that unlocks locked doors")
