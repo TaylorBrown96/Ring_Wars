@@ -3,4 +3,8 @@ class player:
     
      def __init__(self):
         self.loc = None # what room is the player in?
-        self.inventory = None #Starting inventory
+        self.inventory = [item.LlamaPistol(),
+                          item.survivalKnife(),
+                          item.briefCase()
+                         ]
+        #Starting inventory
