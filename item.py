@@ -158,6 +158,19 @@ class deadBody(Container):
     def __init__(self,name,descripton)
         self.contents = [keyCard]
         
+class briefCase(Container):
+    def __init__(self,name,description)
+    self.contents = [Argentinan Peso,
+                     Nuclear Codes,
+                     Mission Documents,
+                     Agent ID Badge,
+                     Spare Pistol Clip,
+                     Passport,
+                     Strange Transmittor]
+    self.open = False
+    self.enteratable = False
+    self.locked = False
+        
     
 def main():
         smallKey = Item("small key", "A small key that unlocks locked doors")
