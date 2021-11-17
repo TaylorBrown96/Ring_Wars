@@ -123,6 +123,7 @@ class EquiptableItem(Item):
             
 class LlamaPistol(EquiptableItem):
     def __init__(self, name, description):
+       super().__init__(name, description)
        self.wearable = True
        self.concealed = True
        self.fixed = False
@@ -131,6 +132,7 @@ class LlamaPistol(EquiptableItem):
         
 class SurvivalKnife(EquiptableItem):
     def __init__(self,name,decription):
+    super().__init__(name, description)    
         self.wearable = True
         self.concealed = True
         self.fixed = False
@@ -149,6 +151,7 @@ class Container(UseableItem, EquiptableItem):
         
 class lockedDoor(Container):
     def __init__(self,name,description):
+    super().__init__(name, description)
         self.open = False
         self.locked = True
         self.key = True
@@ -156,10 +159,12 @@ class lockedDoor(Container):
         
 class deadBody(Container):
     def __init__(self,name,descripton)
+    super().__init__(name, description)
         self.contents = [keyCard]
         
 class briefCase(Container):
     def __init__(self,name,description)
+    super().__init__(name, description)    
         self.contents = [Argentinan Peso(),
                          Nuclear Codes(),
                          Mission Documents(),
