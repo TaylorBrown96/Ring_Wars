@@ -59,7 +59,7 @@ class ConsumableItem(Item):
         super().__init__(name, description)
             
         
-    def consumableCount():
+    #def consumableCount():
             """This handles the number of consumables using a dictionary
                 and removing duplicate items and appending as a number
                 for example [dollar, dollar, dollar] would change to dollar(3)"""
@@ -70,8 +70,8 @@ class ConsumableItem(Item):
             #Will fix this part asap and might not do the refactoring.
             self.consumeable = int
             self.count = 0
-            consumableCount = int
-            consumable = []
+            #consumableCount = int
+            #consumable = []
             
             # command = input(">")
             # command = command.lower()
@@ -81,11 +81,11 @@ class ConsumableItem(Item):
             #     return 
             
              
-            for item in consumable:
-                if item in consumbleCount.keys():
-                    consumableCount[item] += 1
-                else:
-                    consumableCount[item] = 1
+            #for item in consumable:
+                #if item in consumbleCount.keys():
+                    #consumableCount[item] += 1
+                #else:
+                    #consumableCount[item] = 1
                     
             
         #This next part might not work as intended as the inventory
