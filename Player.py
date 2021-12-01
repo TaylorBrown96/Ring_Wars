@@ -22,3 +22,21 @@ class player:
             print("*" + str(item))
         print("*Brief Case: {}".formate(self.BriefCase())
         
+              
+    def currentWeapon(self):
+              max_damage = 0
+              currentWeapon = None
+              
+             for item in self.invetory:
+                try:
+                    if item.damage > max_damage:
+                        currentWeapon = item
+                        max_damage = item.damage
+                 
+                expect AttributeError:
+                    pass
+              return currentWeapon
+              
+              
+   def commandAttack(self):
+              currentWeapon = self.currentWeapon()
