@@ -1,4 +1,4 @@
-# Team_Proj
+# Ring_Wars
 Team Text ADV 
 
 Please create a branch in this main.
