@@ -1,0 +1,12 @@
+C:\Users\Taylor\source\repos\Destination_Unknown\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.dll
+C:\Users\Taylor\source\repos\Destination_Unknown\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Taylor\source\repos\Destination_Unknown\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.AssemblyReference.cache
+C:\Users\Taylor\source\repos\Destination_Unknown\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Taylor\source\repos\Destination_Unknown\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.dll
+C:\Users\Taylor\source\repos\Destination_Unknown\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.pdb
+C:\Users\forth\Source\Repos\Destination_Unknown\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.dll
+C:\Users\forth\Source\Repos\Destination_Unknown\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.pdb
+C:\Users\forth\Source\Repos\Destination_Unknown\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.AssemblyReference.cache
+C:\Users\forth\Source\Repos\Destination_Unknown\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CoreCompileInputs.cache
+C:\Users\forth\Source\Repos\Destination_Unknown\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.dll
+C:\Users\forth\Source\Repos\Destination_Unknown\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.pdb
