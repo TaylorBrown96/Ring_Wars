@@ -1,0 +1,5 @@
+ID,Name,Description,Damage Type,Price,Damage
+1,Lance of the Round Table,"A spear spanning 8 ft, this weapon is perfect for keeping your distance from the enemy while also dealing some damage back to them.",Piercing,100,62
+41,Shield of the Round Table,"A wooden circle, a steel edge, and a red and black star pattern on the front, this shield was made for one purpose; To protect the knight of the Round Table.",Blunt,50,50
+21,Broken Sword,"“Even in its broken state, this sword still serves its purpose of slashing and killing any foe its blade may cross.”",Slashing,10,43
+42,Hammer of the High Orc,“Towering. Fierce. Heavy. Just the sheer sight of this hammer should be enough to strike fear into your foes.”,Blunt,125,125
