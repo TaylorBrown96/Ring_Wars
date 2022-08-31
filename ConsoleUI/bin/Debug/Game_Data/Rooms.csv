@@ -1,0 +1,6 @@
+﻿100,Living Room,A place to watch TV,101,103,-1,105
+101,Kitchen,A place to cook dinner,102,-1,100,-1
+102,Back Deck,A place to relax outside,-1,-1,101,-1
+103,Bedroom,A place to sleep,-1,-1,104,100
+104,Bathroom,A place to shower,103,-1,-1,-1
+105,Garage,A place to park your car,-1,100,-1,-1
