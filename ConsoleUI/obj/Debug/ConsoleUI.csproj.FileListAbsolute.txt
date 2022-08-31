@@ -1,0 +1,10 @@
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\obj\Debug\ConsoleUI.csproj.AssemblyReference.cache
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\bin\Debug\DestinationUnknownLibrary.dll
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\bin\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\Jonesk6843\Desktop\Ring_Wars-Jonesk\Ring-Wars-Tarantino-Observers-code\ConsoleUI\obj\Debug\ConsoleUI.pdb
