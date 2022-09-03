@@ -100,6 +100,7 @@ namespace ConsoleUI
                             if (north > 0)
                             {
                                 roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == north);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -111,6 +112,7 @@ namespace ConsoleUI
                             if (east > 0)
                             {
                                 roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == east);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -122,6 +124,7 @@ namespace ConsoleUI
                             if (south > 0)
                             {
                                 roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == south);
+                                Console.WriteLine();
                             }
                             else
                             {
@@ -133,6 +136,7 @@ namespace ConsoleUI
                             if (west > 0)
                             {
                                 roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == west);
+                                Console.WriteLine();
                             }
                             else
                             {

@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32630.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{A06B4076-CD7C-4B5E-B804-945C55BC647C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DestinationUnknwonLibrary", "..\..\Ring_Wars-Taylor\DestinationUnknownLibrary\DestinationUnknwonLibrary.csproj", "{6706C168-2901-4CBC-B750-3695DC3B43FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DestinationUnknownLibrary", "DestinationUnknownLibrary\DestinationUnknownLibrary.csproj", "{6706C168-2901-4CBC-B750-3695DC3B43FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
