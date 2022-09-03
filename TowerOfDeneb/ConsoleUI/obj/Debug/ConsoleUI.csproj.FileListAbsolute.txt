@@ -1,0 +1,8 @@
+D:\Kalie's Data\Desktop\C# projects\TowerOfDeneb\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+D:\Kalie's Data\Desktop\C# projects\TowerOfDeneb\ConsoleUI\bin\Debug\ConsoleUI.exe
+D:\Kalie's Data\Desktop\C# projects\TowerOfDeneb\ConsoleUI\bin\Debug\ConsoleUI.pdb
+D:\Kalie's Data\Desktop\C# projects\TowerOfDeneb\ConsoleUI\obj\Debug\ConsoleUI.csproj.AssemblyReference.cache
+D:\Kalie's Data\Desktop\C# projects\TowerOfDeneb\ConsoleUI\obj\Debug\ConsoleUI.csproj.SuggestedBindingRedirects.cache
+D:\Kalie's Data\Desktop\C# projects\TowerOfDeneb\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+D:\Kalie's Data\Desktop\C# projects\TowerOfDeneb\ConsoleUI\obj\Debug\ConsoleUI.exe
+D:\Kalie's Data\Desktop\C# projects\TowerOfDeneb\ConsoleUI\obj\Debug\ConsoleUI.pdb
