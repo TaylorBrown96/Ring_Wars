@@ -52,9 +52,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Ring_Wars-Taylor\DestinationUnknownLibrary\DestinationUnknwonLibrary.csproj">
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DestinationUnknownLibrary\DestinationUnknownLibrary.csproj">
       <Project>{6706c168-2901-4cbc-b750-3695dc3b43fa}</Project>
-      <Name>DestinationUnknwonLibrary</Name>
+      <Name>DestinationUnknownLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
