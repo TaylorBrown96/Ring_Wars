@@ -19,3 +19,14 @@ C:\Users\Parker Pawn\Desktop\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.cspr
 C:\Users\Parker Pawn\Desktop\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
 C:\Users\Parker Pawn\Desktop\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\Parker Pawn\Desktop\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\bin\Debug\DestinationUnknownLibrary.dll
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\bin\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\ConsoleUI.csproj.AssemblyReference.cache
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\ConsoleUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\ConsoleUI.pdb
