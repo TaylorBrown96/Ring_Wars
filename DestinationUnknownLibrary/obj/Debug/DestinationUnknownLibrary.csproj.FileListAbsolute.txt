@@ -16,3 +16,9 @@ C:\Users\Parker Pawn\Desktop\Ring_Wars-Jonesk\DestinationUnknownLibrary\obj\Debu
 C:\Users\Parker Pawn\Desktop\Ring_Wars-Jonesk\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Parker Pawn\Desktop\Ring_Wars-Jonesk\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.dll
 C:\Users\Parker Pawn\Desktop\Ring_Wars-Jonesk\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.dll
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.AssemblyReference.cache
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.dll
+C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.pdb

@@ -19,18 +19,20 @@ namespace DestinationUnknownLibrary
 		// Stores all created mob objects
 		public static List<Mobs> Mob = new List<Mobs>();
 
-		public Mobs(int id, string name, string race, int hp, string weapon, string description, List<string> inventory) 
+		public Mobs(int id, string name, string race, int hp, int ad, string weapon, string description, List<string> inventory) 
 			: base(id, name, race, hp)
 		{
 			Id = id;
 			Name = name;
 			Race = race;
 			HP = hp;
+			AD = ad;
 			Weapon = weapon;
 			Description = description;
 			Inventory = inventory;
 		}
 
+		public int AD { get; set; }
 		public string Weapon { get; set; }
 		public string Description { get; set; }
 		public List<string> Inventory { get; set; }
@@ -46,7 +48,7 @@ namespace DestinationUnknownLibrary
 				string[] tokens = line.Split(',');
 
 				List<string> inv = new List<string>();
-				for (int i = 6; i < tokens.Length; i++)
+				for (int i = 7; i < tokens.Length; i++)
 				{
 					inv.Add(tokens[i]);
 				}
@@ -55,10 +57,11 @@ namespace DestinationUnknownLibrary
 				string name = tokens[1];
 				string race = tokens[2];
 				int hp = int.Parse(tokens[3]);
-				string weapon = tokens[4];
-				string description = tokens[5];
+				int ad = int.Parse(tokens[4]);
+				string weapon = tokens[5];
+				string description = tokens[6];
 
-				Mob.Add(new Mobs(id, name, race, hp, weapon, description, inv));
+				Mob.Add(new Mobs(id, name, race, hp, ad, weapon, description, inv));
 			}
 			reader.Close();
 		}

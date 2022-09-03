@@ -15,11 +15,16 @@ namespace DestinationUnknownLibrary
 {
     public class Combat
     {
-        public static int Attack(int HP)
+        public static int Attack(int Mob_AD, int Player_AD, int Mob_HP, int roomIndex)
         {
             Random rnd = new Random();
-            HP -= rnd.Next(1,21);
-            return HP;
+
+            Mob_AD = rnd.Next(0,Mob_AD);
+            Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP -= Player_AD;
+
+            Console.WriteLine("The Monster did " + Mob_AD + " damage to you.");
+            Console.WriteLine("You did " + Player_AD + " damage to the monster.");
+            return Mob_AD;
         }
     }
 }
