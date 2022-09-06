@@ -18,38 +18,38 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            try
+            //load the game world
+            Console.Title = "Ring Wars";
+            Load.Game();
+            Player player = Player.LoadUser();
+
+            while (true)
             {
-                //load the game world
-                Load.Game();
+                Console.Write("Please enter your password: ");
+                string usrinp = Console.ReadLine();
 
-                //Main Menu
-                Console.WriteLine("Are you new to Ring Wars?");
-                string userInput = Console.ReadLine();
-
-                switch (userInput.ToLower())
+                if (usrinp == player.Password)
                 {
-                    case "yes":
-                        {
-                            //Introduction
-                            MovementMenu.UserMenu();
-                            break;
-                        }
-                    case "no":
-                        {
+                    string title = @"
+█▄▄▄▄ ▄█    ▄     ▄▀        ▄ ▄   ██   █▄▄▄▄   ▄▄▄▄▄   
+█  ▄▀ ██     █  ▄▀         █   █  █ █  █  ▄▀  █     ▀▄ 
+█▀▀▌  ██ ██   █ █ ▀▄      █ ▄   █ █▄▄█ █▀▀▌ ▄  ▀▀▀▀▄   
+█  █  ▐█ █ █  █ █   █     █  █  █ █  █ █  █  ▀▄▄▄▄▀    
+  █    ▐ █  █ █  ███       █ █ █     █   █             
+ ▀       █   ██             ▀ ▀     █   ▀              
+                                   ▀                    ";
 
-                            break;
-                        }
-                    default:
-                        {
-                            Console.WriteLine("I'm sorry, come again?");
-                            break;
-                        }
+                    Console.WriteLine(title);
+
+
+                    Console.WriteLine("\nWelcome to Ring Wars! You will fight incredible monsters and find treasure all the like!\n");
+                    CoreGame.UserMenu(player);
+                    break;
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
+                else
+                {
+                    Console.WriteLine("The password entered was incorrect\n");
+                }
             }
         }
     }

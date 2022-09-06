@@ -196,6 +196,7 @@ namespace DestinationUnknownLibrary
 							continue;
 					}
 				}
+				Console.WriteLine();
 
 				hp = 100;
 				location = 100;
