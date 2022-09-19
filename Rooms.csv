@@ -1,0 +1,16 @@
+100,Garden,Home sweet home,101,103,-1,105
+101,Kitchen,A goldmine of great food,102,-1,100,-1
+102,Deck,Some bad bugs are around here…,-1,-1,101,-1
+103,Master Bedroom,The Giants sleep here,-1,-1,104,100
+104,Bathroom,Damp and filled with roaches,103,-1,-1,-1
+105,Garage,A monastary littered with corpses,-1,100,-1,-1
+106,Closet,The garbs of the gients hang over me.,-1,-1,-1,-1
+107,Backyard,My usual grounds only bared by towering planks of wood,-1,-1,-1,-1
+108,Shed,The tools of the giants rusted and old.,-1,-1,-1,-1
+109,Upstairs Hallway,Traversing the stairs has led you to higher grounds with more rooms.,-1,-1,-1,-1
+110,Kid's Room,There are many toys and other trinkets in this area.,-1,-1,-1,-1
+111,Baby's Room,The little giant sleeps in this area.,-1,-1,-1,-1
+112,Laundry Room,Mountains of clothes block my view of what is ahead.,-1,-1,-1,-1
+113,Guest Room,A clean area with little trinkets to take,-1,-1,-1,-1
+114,Dining Room,The area of which the giants and ants eat.,-1,-1,-1,-1
+115,Home Office,Pencils pens books and paper balls lie dormant in this knowledgable filled room,-1,-1,-1,-1
