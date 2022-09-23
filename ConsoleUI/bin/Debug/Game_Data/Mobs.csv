@@ -1,0 +1,11 @@
+600	Gnat	flying	15	5	impale	A tiny flyer	500	300	302	
+601	PillBug	common insect	23	7	burrow	Likes to ball up and burrow	501	301	401	
+602	Louse	common insect	30	3	puke	A common house louse	301	502		
+603	Butterfly	flying	35	12	acid	Flys around and spits acid	301	503		
+604	Dragonfly	boss	55	15	fire breath	A legendary beast with great speed and power	301	302	400	402
+605	Ant	common insect	7	6	bite	When in a colony they are strong				
+606	Cockroack	common insect	12	3	scuttle	A scavenger amongst the insecta				
+607	Cricket	common insect	13	5	vibrate	Its songs of romance ring throughout the land				
+608	Termite	common insect	5	1	nibble	Woodchewers that hope to tear down the home of the giants				
+609	TunnelSpider	boss	60	10	bite	A nimble arachhnid that can catch you by surprise				
+610	HouseFly	flying	4	3	puke	A volture amongst the insecta				
