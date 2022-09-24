@@ -23,8 +23,8 @@ namespace DestinationUnknownLibrary
             Weapons.LoadWeapons();
             Potions.LoadPotions();
             Treasures.LoadTreasure();
-            Items.LoadItems();
-            Mobs.LoadMobs();
+            Items.Load();
+            //Mobs.LoadMobs();
         }
     }
 

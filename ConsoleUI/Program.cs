@@ -23,6 +23,17 @@ namespace ConsoleUI
             Load.Game();
             Player player = Player.LoadUser();
 
+
+            foreach (Items i in Items.items)
+            {
+                Console.WriteLine(i.Id);
+                Console.WriteLine(i.Name);
+                Console.WriteLine(i.Price);
+                Console.WriteLine(i.QuestItem);
+                Console.WriteLine(i.Required);
+                Console.WriteLine(i.Description);
+            }
+
             while (true)
             {
                 Console.Write("Please enter your password: ");

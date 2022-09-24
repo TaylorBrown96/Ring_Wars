@@ -22,3 +22,14 @@ C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\
 C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.dll
 C:\Users\Taylor\Desktop\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.AssemblyReference.cache
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.dll
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.dll
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\bin\Debug\Dapper.dll
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\bin\Debug\System.Data.SQLite.dll
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\bin\Debug\Dapper.xml
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\bin\Debug\System.Data.SQLite.xml
+C:\Users\Taylor\Desktop\Ring_Wars-Taylor\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CopyComplete

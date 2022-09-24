@@ -53,9 +53,9 @@ namespace ConsoleUI
                             {
                                 if (Rooms.Room[roomIndex].Loot[i] > 0)
                                 {
-                                    if (Items.Item.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i]) != -1)
+                                    if (Items.items.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i]) != -1)
                                     {
-                                        Console.Write("\n   " + Items.Item[Items.Item.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i])].Name);
+                                        Console.Write("\n   " + Items.items[Items.items.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i])].Name);
                                     }
                                     else if (Potions.Potion.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i]) != -1)
                                     {
