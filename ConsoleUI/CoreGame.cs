@@ -23,15 +23,15 @@ namespace ConsoleUI
 
                 //loading player stats
                 int roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == player.Location);
-               
+                //main menu
+                //Display player menu
+                Console.WriteLine($"Currently, you are in the " + Rooms.Room[roomIndex].Name);
+                Console.WriteLine(Rooms.Room[roomIndex].Description);
+                Console.WriteLine("Make your choice, Ring Bearer.");
+                Console.WriteLine($"Hp: " + player.HP + "||type (help) for controls.");
+
                 while (exit == false)
-                {
-                    //main menu
-                    //Display player menu
-                    Console.WriteLine($"Currently, you are in the " + Rooms.Room[roomIndex].Name);
-                    Console.WriteLine(Rooms.Room[roomIndex].Description);
-                    Console.WriteLine("Make your choice, Ring Bearer.");
-                    Console.WriteLine($"Hp: " + player.HP + "||type (help) for controls.");
+                {    
                     Console.Write("> ");
                     string input = Console.ReadLine();
                     

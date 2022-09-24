@@ -47,10 +47,16 @@
     <Compile Include="Player.cs" />
     <Compile Include="Potions.cs" />
     <Compile Include="Rooms.cs" />
+    <Compile Include="SqliteDataAccess.cs" />
     <Compile Include="Treasures.cs" />
     <Compile Include="Weapons.cs" />
     <Compile Include="World.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RingWarsDB.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
