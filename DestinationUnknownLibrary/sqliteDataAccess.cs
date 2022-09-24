@@ -15,6 +15,7 @@ namespace DestinationUnknownLibrary
         {
             using (var con = new SQLiteConnection(LoadConnectionString()))
             {
+                con.Open();
                 var cmd = new SQLiteCommand("SELECT * FROM Item", con);
                 SQLiteDataReader rdr = cmd.ExecuteReader();
 
