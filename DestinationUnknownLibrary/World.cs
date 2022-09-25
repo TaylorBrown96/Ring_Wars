@@ -24,7 +24,7 @@ namespace DestinationUnknownLibrary
             Potions.LoadPotions();
             Treasures.LoadTreasure();
             Items.Load();
-            //Mobs.LoadMobs();
+            Mobs.Load();
         }
     }
 
