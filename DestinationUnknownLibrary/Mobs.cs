@@ -19,7 +19,7 @@ namespace DestinationUnknownLibrary
 		// Stores all created mob objects
 		public static List<Mobs> Mob = new List<Mobs>();
 
-		public Mobs(int id, string name, string race, int hp, int ad, string weapon, string description, List<string> inventory) 
+		public Mobs(int id, string name, string race, int hp, int ad, string weapon, string description, List<int> inventory) 
 			: base(id, name, race, hp)
 		{
 			Id = id;
@@ -35,35 +35,12 @@ namespace DestinationUnknownLibrary
 		public int AD { get; set; }
 		public string Weapon { get; set; }
 		public string Description { get; set; }
-		public List<string> Inventory { get; set; }
+		public List<int> Inventory { get; set; }
 
-
-		// Loads Mobs
-		public static void LoadMobs()
-		{
-			string line;
-			StreamReader reader = File.OpenText("Game_Data/Mobs.csv");
-			while ((line = reader.ReadLine()) != null)
-			{
-				string[] tokens = line.Split(',');
-
-				List<string> inv = new List<string>();
-				for (int i = 7; i < tokens.Length; i++)
-				{
-					inv.Add(tokens[i]);
-				}
-
-				int id = int.Parse(tokens[0]);
-				string name = tokens[1];
-				string race = tokens[2];
-				int hp = int.Parse(tokens[3]);
-				int ad = int.Parse(tokens[4]);
-				string weapon = tokens[5];
-				string description = tokens[6];
-
-				Mob.Add(new Mobs(id, name, race, hp, ad, weapon, description, inv));
-			}
-			reader.Close();
-		}
+        // Calls the DB Query and Creates the objects from the DB records
+        public static void Load()
+        {
+            Mob = SqliteDataAccess.LoadMobs();
+        }
 	}
 }

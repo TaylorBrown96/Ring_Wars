@@ -24,14 +24,19 @@ namespace ConsoleUI
             Player player = Player.LoadUser();
 
 
-            foreach (Items i in Items.items)
+            foreach (Mobs i in Mobs.Mob)
             {
                 Console.WriteLine(i.Id);
                 Console.WriteLine(i.Name);
-                Console.WriteLine(i.Price);
-                Console.WriteLine(i.QuestItem);
-                Console.WriteLine(i.Required);
+                Console.WriteLine(i.Race);
+                Console.WriteLine(i.HP);
+                Console.WriteLine(i.AD);
                 Console.WriteLine(i.Description);
+                foreach (int x in i.Inventory)
+                {
+                    Console.Write(x + " ");
+                }
+                Console.WriteLine("\n");
             }
 
             while (true)
