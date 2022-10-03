@@ -53,16 +53,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Combat.cs" />
-    <Compile Include="Items.cs" />
-    <Compile Include="Mobs.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="Potions.cs" />
-    <Compile Include="Rooms.cs" />
+    <Compile Include="Lists\Combat.cs" />
+    <Compile Include="Lists\Items.cs" />
+    <Compile Include="Lists\Mobs.cs" />
+    <Compile Include="Lists\Player.cs" />
+    <Compile Include="Lists\Potions.cs" />
+    <Compile Include="Lists\Rooms.cs" />
     <Compile Include="sqliteDataAccess.cs" />
-    <Compile Include="Treasures.cs" />
-    <Compile Include="Weapons.cs" />
-    <Compile Include="World.cs" />
+    <Compile Include="Lists\Treasures.cs" />
+    <Compile Include="Lists\Weapons.cs" />
+    <Compile Include="Lists\World.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
