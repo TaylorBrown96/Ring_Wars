@@ -8,6 +8,7 @@ using DestinationUnknownLibrary;
 
 namespace ConsoleUI
 {
+    public delegate void userInfo(string str);
     public class CoreGame
     {
         public static void UserMenu(Player player)
@@ -21,14 +22,15 @@ namespace ConsoleUI
                 int south;
                 int west;
 
+                Action<string> Display = str => Console.WriteLine(str);
                 //loading player stats
                 int roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == player.Location);
                 //main menu
                 //Display player menu
-                Console.WriteLine($"Currently, you are in the " + Rooms.Room[roomIndex].Name);
-                Console.WriteLine(Rooms.Room[roomIndex].Description);
-                Console.WriteLine("Make your choice, Ring Bearer.");
-                Console.WriteLine($"Hp: " + player.HP + "||type (help) for controls.");
+                Display($"Currently, you are in the " + Rooms.Room[roomIndex].Name);
+                Display(Rooms.Room[roomIndex].Description);
+                Display("Make your choice, Ring Bearer.");
+                Display($"Hp: " + player.HP + "||type (help) for controls.");
 
                 while (exit == false)
                 {    
@@ -46,9 +48,9 @@ namespace ConsoleUI
                             south = Rooms.Room[roomIndex].Exit[2];
                             west = Rooms.Room[roomIndex].Exit[3];
 
-                            Console.Write("\nRoom Name: \n   " + Rooms.Room[roomIndex].Name);
-                            Console.Write("\n\nRoom Description: \n   " + Rooms.Room[roomIndex].Description);
-                            Console.Write("\n\nItems:");
+                            Display("\nRoom Name: \n   " + Rooms.Room[roomIndex].Name);
+                            Display("\n\nRoom Description: \n   " + Rooms.Room[roomIndex].Description);
+                            Display("\n\nItems:");
                             for (int i = 0; i < Rooms.Room[roomIndex].Loot.Count; i++)
                             {
                                 if (Rooms.Room[roomIndex].Loot[i] > 0)
@@ -67,28 +69,28 @@ namespace ConsoleUI
                                     }
                                 }
                             }
-                            Console.Write("\n\nEnemies:");
+                            Display("\n\nEnemies:");
                             if (Rooms.Room[roomIndex].Mob[0] > 0)
                             {
-                                Console.Write("\n   " + Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].Name);
+                                Display("\n   " + Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].Name);
                             }
 
-                            Console.WriteLine("\n\nExits:");
+                            Display("\n\nExits:");
                             if (north > 0)
                             {
-                                Console.WriteLine("   North: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == north)].Name);
+                                Display("   North: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == north)].Name);
                             }
                             if (east > 0)
                             {
-                                Console.WriteLine("   East: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == east)].Name);
+                                Display("   East: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == east)].Name);
                             }
                             if (south > 0)
                             {
-                                Console.WriteLine("   South: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == south)].Name);
+                                Display("   South: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == south)].Name);
                             }
                             if (west > 0)
                             {
-                                Console.WriteLine("   West: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == west)].Name);
+                                Display("   West: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == west)].Name);
                             }
                             break;
 
@@ -99,11 +101,11 @@ namespace ConsoleUI
                             if (north > 0)
                             {
                                 roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == north);
-                                Console.WriteLine();
+                                Display("");
                             }
                             else
                             {
-                                Console.WriteLine("There is nothing in that direction");
+                                Display("There is nothing in that direction");
                             }
                             break;
                         case "e":
@@ -111,11 +113,11 @@ namespace ConsoleUI
                             if (east > 0)
                             {
                                 roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == east);
-                                Console.WriteLine();
+                                Display("");
                             }
                             else
                             {
-                                Console.WriteLine("There is nothing in that direction");
+                                Display("There is nothing in that direction");
                             }
                             break;
                         case "s":
@@ -123,11 +125,11 @@ namespace ConsoleUI
                             if (south > 0)
                             {
                                 roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == south);
-                                Console.WriteLine();
+                                Display("");
                             }
                             else
                             {
-                                Console.WriteLine("There is nothing in that direction");
+                                Display("There is nothing in that direction");
                             }
                             break;
                         case "w":
@@ -135,11 +137,11 @@ namespace ConsoleUI
                             if (west > 0)
                             {
                                 roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == west);
-                                Console.WriteLine();
+                                Display("");
                             }
                             else
                             {
-                                Console.WriteLine("There is nothing in that direction");
+                                Display("There is nothing in that direction");
                             }
                             break;
 
@@ -151,58 +153,58 @@ namespace ConsoleUI
                                  
                                 if (Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP <= 0)
                                 {
-                                    Console.WriteLine("\nYou killed the foul beast!");
-                                    Console.WriteLine("You were left with: " + player.HP + "HP");
+                                    Display("\nYou killed the foul beast!");
+                                    Display("You were left with: " + player.HP + "HP");
                                 }
                                 else
                                 {
-                                    Console.WriteLine("\nThe enemy still has " + Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP + "HP");
-                                    Console.WriteLine("You have: " + player.HP + "HP ");
+                                    Display("\nThe enemy still has " + Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP + "HP");
+                                    Display("You have: " + player.HP + "HP ");
                                 }
                             }
                             else
                             {
-                                Console.WriteLine("The moster has already been slain!");
+                                Display("The moster has already been slain!");
                             }
 
                             if (player.HP > 0)
                             {
-                                Console.WriteLine();
+                                Display("");
                                 continue;
                             }
-                            Console.WriteLine("You Died!");
-                            Console.Write("\nBetter luck next time!");
+                            Display("You Died!");
+                            Display("\nBetter luck next time!");
                             exit = true;
                             break;
 
                         //Settings
                         case "exit":
-                            Console.WriteLine("Until next time, Ring Bearer.");
-                            Console.WriteLine("Press Enter to exit the program.");
-                            Console.ReadLine();
+                            Display("Until next time, Ring Bearer.");
+                            Display("Press Enter to exit the program.");
+                            Display("");
                             exit = true;
                             break;
                         case "help":
                             {
-                                Console.WriteLine("Commands:");
-                                Console.WriteLine("   Attack - Attacks the monster in the room");
+                                Display("Commands:");
+                                Display("   Attack - Attacks the monster in the room");
                                 // Console.WriteLine("   Pickup - Picks up the object in the room");
                                 // Console.WriteLine("     Drop - Drops the item");
-                                Console.WriteLine("     Look - Tells you the room description & the exits");
-                                Console.WriteLine("        N - Moves you north");
-                                Console.WriteLine("        E - Moves you east");
-                                Console.WriteLine("        S - Moves you south");
-                                Console.WriteLine("        W - Moves you west");
+                                Display("     Look - Tells you the room description & the exits");
+                                Display("        N - Moves you north");
+                                Display("        E - Moves you east");
+                                Display("        S - Moves you south");
+                                Display("        W - Moves you west");
                                 // Console.WriteLine("        I - Shows inventory");
-                                Console.WriteLine("     Exit - Terminates the game");
-                                Console.WriteLine("Press Enter to exit help menu.");
+                                Display("     Exit - Terminates the game");
+                                Display("Press Enter to exit help menu.");
                                 Console.ReadLine();
                             }
                             break;
                         default:
                             {
-                                Console.WriteLine("Apologies. Come again?");
-                                Console.WriteLine();
+                                Display("Apologies. Come again?");
+                                Display("");
                                 break;
                             }
                     }
