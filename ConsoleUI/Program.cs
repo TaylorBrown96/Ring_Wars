@@ -18,6 +18,9 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+            //Creating display lambda expression
+            Action<string> Display = str => Console.WriteLine(str); //Display for strings
+            Action<string> inputDisplay = str => Console.Write(str); //Display for inputs
             //load the game world
             Console.Title = "Ring Wars";
             Load.Game();
@@ -25,7 +28,7 @@ namespace ConsoleUI
 
             while (true)
             {
-                Console.Write("Please enter your password: ");
+                inputDisplay("Please enter your password: ");
                 string usrinp = Console.ReadLine();
 
                 if (usrinp == player.Password)
@@ -39,15 +42,15 @@ namespace ConsoleUI
  ▀       █   ██             ▀ ▀     █   ▀              
                                    ▀                    ";
 
-                    Console.WriteLine(title);
+                    Display(title);
 
-                    Console.WriteLine("\nWelcome to Ring Wars! You will fight incredible monsters and find treasure all the like!\n");
+                    Display("\nWelcome to Ring Wars! You will fight incredible monsters and find treasure all the like!\n");
                     CoreGame.UserMenu(player);
                     break;
                 }
                 else
                 {
-                    Console.WriteLine("The password entered was incorrect\n");
+                    Display("The password entered was incorrect\n");
                 }
             }
         }
