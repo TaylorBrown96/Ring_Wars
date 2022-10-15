@@ -22,9 +22,13 @@ namespace ConsoleUI
                 int south;
                 int west;
 
+                //Creating display lambda expression
                 Action<string> Display = str => Console.WriteLine(str);
+                Action<string> inputDisplay = str => Console.Write(str);
+
                 //loading player stats
                 int roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == player.Location);
+
                 //main menu
                 //Display player menu
                 Display($"Currently, you are in the " + Rooms.Room[roomIndex].Name);
@@ -33,8 +37,8 @@ namespace ConsoleUI
                 Display($"Hp: " + player.HP + "||type (help) for controls.");
 
                 while (exit == false)
-                {    
-                    Console.Write("> ");
+                {
+                    inputDisplay("> ");
                     string input = Console.ReadLine();
                     
                     //Player input options
@@ -57,15 +61,15 @@ namespace ConsoleUI
                                 {
                                     if (Items.items.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i]) != -1)
                                     {
-                                        Console.Write("\n   " + Items.items[Items.items.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i])].Name);
+                                        Display("\n   " + Items.items[Items.items.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i])].Name);
                                     }
                                     else if (Potions.Potion.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i]) != -1)
                                     {
-                                        Console.Write("\n   " + Potions.Potion[Potions.Potion.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i])].Name);
+                                        Display("\n   " + Potions.Potion[Potions.Potion.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i])].Name);
                                     }
                                     else if (Weapons.Weapon.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i]) != -1)
                                     {
-                                        Console.Write("\n   " + Weapons.Weapon[Weapons.Weapon.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i])].Name);
+                                        Display("\n   " + Weapons.Weapon[Weapons.Weapon.FindIndex(a => a.Id == Rooms.Room[roomIndex].Loot[i])].Name);
                                     }
                                 }
                             }
