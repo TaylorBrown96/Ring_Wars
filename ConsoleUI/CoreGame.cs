@@ -5,12 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using DestinationUnknownLibrary;
+using System.Diagnostics;
+using System.Globalization;
 
 namespace ConsoleUI
 {
     public delegate void userInfo(string str);
     public class CoreGame
     {
+        private static void mobDialogueAlert(string mobDialogue)
+        {
+            Console.Write(mobDialogue);
+        }
         public static void UserMenu(Player player)
         {
             try
@@ -79,7 +85,7 @@ namespace ConsoleUI
                                 Display("\n   " + Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].Name);
                             }
 
-                            Display("\n\nExits:");
+                                Display("\n\nExits:");
                             if (north > 0)
                             {
                                 Display("   North: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == north)].Name);
@@ -159,11 +165,13 @@ namespace ConsoleUI
                                 {
                                     Display("\nYou killed the foul beast!");
                                     Display("You were left with: " + player.HP + "HP");
+                                    
                                 }
                                 else
                                 {
                                     Display("\nThe enemy still has " + Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP + "HP");
                                     Display("You have: " + player.HP + "HP ");
+                                    Display(Combat.mobDialogue(mobDialogueAlert));
                                 }
                             }
                             else
