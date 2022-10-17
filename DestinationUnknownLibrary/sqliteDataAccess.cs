@@ -258,28 +258,28 @@ namespace DestinationUnknownLibrary
 
                 foreach (int item in inv)
                 {
-                    if (item >= 500 && item <= 599)
+                    if (item >= 500 && item <= 599) // Item
                     {
                         var PlayerInv = new SQLiteCommand("INSERT into PlayerInventory VALUES(@id, @item, null, null, null)", con);
                         PlayerInv.Parameters.AddWithValue("@id", id);
                         PlayerInv.Parameters.AddWithValue("@item", item);
                         PlayerInv.ExecuteNonQuery();
                     }
-                    else if (item >= 200 && item <= 299)
+                    else if (item >= 200 && item <= 299) // Potion
                     {
                         var PlayerInv = new SQLiteCommand("INSERT into PlayerInventory VALUES(@id, null, @item, null, null)", con);
                         PlayerInv.Parameters.AddWithValue("@id", id);
                         PlayerInv.Parameters.AddWithValue("@item", item);
                         PlayerInv.ExecuteNonQuery();
                     }
-                    else if (item >= 300 && item <= 399)
+                    else if (item >= 300 && item <= 399) // Weapon
                     {
                         var PlayerInv = new SQLiteCommand("INSERT into PlayerInventory VALUES(@id, null, null, @item, null)", con);
                         PlayerInv.Parameters.AddWithValue("@id", id);
                         PlayerInv.Parameters.AddWithValue("@item", item);
                         PlayerInv.ExecuteNonQuery();
                     }
-                    else if (item >= 400 && item <= 499)
+                    else if (item >= 400 && item <= 499) // Treasure
                     {
                         var PlayerInv = new SQLiteCommand("INSERT into PlayerInventory VALUES(@id, null, null, null, @item)", con);
                         PlayerInv.Parameters.AddWithValue("@id", id);
