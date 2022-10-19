@@ -36,6 +36,7 @@ namespace DestinationUnknownLibrary
 		public List<int> Loot { get; set; }
 		public List<int> Exit { get; set; }
 
+		// Calls the DB Query and Creates the objects from the DB records
 		public static void Load()
 		{
 			Room = SqliteDataAccess.LoadRooms();

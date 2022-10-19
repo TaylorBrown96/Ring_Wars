@@ -32,6 +32,7 @@ namespace DestinationUnknownLibrary
 		public string DmgType { get; set; }
 		public int Damage { get; set; }
 
+		// Calls the DB Query and Creates the objects from the DB records
 		public static void Load()
 		{
 			Weapon = SqliteDataAccess.LoadWeapons();

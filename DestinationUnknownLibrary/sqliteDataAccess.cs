@@ -165,12 +165,12 @@ namespace DestinationUnknownLibrary
                 int hp = 0;
                 int Location = 0;
                 List<int> PInv = new List<int>();
-                List<string> PQue = new List<string>();
+                List<int> PQue = new List<int>();
 
                 while (rdr.Read())
                 {
                     PInv = playerInventory(rdr.GetInt32(0));
-                    PQue = playerQuest(Convert.ToString(rdr.GetInt32(0)));
+                    PQue = playerQuest(rdr.GetInt32(0));
                     id = rdr.GetInt32(0);
                     name = rdr.GetString(1);
                     password = rdr.GetString(2);
@@ -220,7 +220,7 @@ namespace DestinationUnknownLibrary
         }
 
         //Setting playerQuest List to varibale
-        public static List<string> playerQuest(string value)
+        public static List<int> playerQuest(int value)
         {
             using (var con = new SQLiteConnection(LoadConnectionString()))
             {
@@ -229,15 +229,77 @@ namespace DestinationUnknownLibrary
                 cmd.Parameters.AddWithValue("@playerID", value);
                 SQLiteDataReader rdr = cmd.ExecuteReader();
 
-                List<string> PQue = new List<string>();
+                List<int> PQue = new List<int>();
                 while (rdr.Read())
                 {
                     if (!rdr.IsDBNull(1))
                     {
-                        PQue.Add(rdr.GetString(1));
+                        PQue.Add(rdr.GetInt32(1));
                     }
                 }
                 return PQue;
+            }
+        }
+
+        public static Player InsertPlayer(int id, string name, string password, string race, string Pclass, int hp, int location, List<int> inv, List<int> quests)
+        {
+            using (var con = new SQLiteConnection(LoadConnectionString()))
+            {
+                con.Open();
+                var playerTable = new SQLiteCommand("INSERT into Player VALUES(@id, @name, @password, @race, @Pclass, @hp, @location)", con);
+                playerTable.Parameters.AddWithValue("@id",id);
+                playerTable.Parameters.AddWithValue("@name", name);
+                playerTable.Parameters.AddWithValue("@password", password);
+                playerTable.Parameters.AddWithValue("@race", race);
+                playerTable.Parameters.AddWithValue("@Pclass", Pclass);
+                playerTable.Parameters.AddWithValue("@hp", hp);
+                playerTable.Parameters.AddWithValue("@location", location);
+                playerTable.ExecuteNonQuery();
+
+                foreach (int item in inv)
+                {
+                    if (item >= 500 && item <= 599) // Item
+                    {
+                        var PlayerInv = new SQLiteCommand("INSERT into PlayerInventory VALUES(@id, @item, null, null, null)", con);
+                        PlayerInv.Parameters.AddWithValue("@id", id);
+                        PlayerInv.Parameters.AddWithValue("@item", item);
+                        PlayerInv.ExecuteNonQuery();
+                    }
+                    else if (item >= 200 && item <= 299) // Potion
+                    {
+                        var PlayerInv = new SQLiteCommand("INSERT into PlayerInventory VALUES(@id, null, @item, null, null)", con);
+                        PlayerInv.Parameters.AddWithValue("@id", id);
+                        PlayerInv.Parameters.AddWithValue("@item", item);
+                        PlayerInv.ExecuteNonQuery();
+                    }
+                    else if (item >= 300 && item <= 399) // Weapon
+                    {
+                        var PlayerInv = new SQLiteCommand("INSERT into PlayerInventory VALUES(@id, null, null, @item, null)", con);
+                        PlayerInv.Parameters.AddWithValue("@id", id);
+                        PlayerInv.Parameters.AddWithValue("@item", item);
+                        PlayerInv.ExecuteNonQuery();
+                    }
+                    else if (item >= 400 && item <= 499) // Treasure
+                    {
+                        var PlayerInv = new SQLiteCommand("INSERT into PlayerInventory VALUES(@id, null, null, null, @item)", con);
+                        PlayerInv.Parameters.AddWithValue("@id", id);
+                        PlayerInv.Parameters.AddWithValue("@item", item);
+                        PlayerInv.ExecuteNonQuery();
+                    }
+                }
+                
+                foreach(int quest in quests)
+                {
+                    var PlayerQuest = new SQLiteCommand("INSERT into PlayerQuests VALUES(@id, @quest)", con);
+                    PlayerQuest.Parameters.AddWithValue("@id",id);
+                    PlayerQuest.Parameters.AddWithValue("@quest", quest);
+                    PlayerQuest.ExecuteNonQuery();
+                }
+                con.Close();
+
+                Player player = new Player(id, name, password, race, Pclass, hp, location, inv, quests);
+
+                return player;
             }
         }
 

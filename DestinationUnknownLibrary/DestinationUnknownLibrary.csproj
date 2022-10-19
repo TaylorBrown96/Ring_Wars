@@ -58,6 +58,7 @@
     <Compile Include="Mobs.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Potions.cs" />
+    <Compile Include="Printer.cs" />
     <Compile Include="Rooms.cs" />
     <Compile Include="sqliteDataAccess.cs" />
     <Compile Include="Treasures.cs" />

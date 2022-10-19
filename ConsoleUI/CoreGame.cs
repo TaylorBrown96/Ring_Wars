@@ -5,47 +5,61 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using DestinationUnknownLibrary;
+using System.Diagnostics;
+using System.Globalization;
+using System.Drawing;
 
 namespace ConsoleUI
 {
+    //Creating user Delegate
     public delegate void userInfo(string str);
     public class CoreGame
     {
+        //Sets up combat delegate alert
+        private static void mobDialogueAlert(string mobDialogue)
+        {
+            Console.Write(mobDialogue);
+        }
+
+        // User interfaces and navigation
         public static void UserMenu(Player player)
         {
             try
             {
-                //Variables
+                // Variables
                 bool exit = false;
                 int north;
                 int east;
                 int south;
                 int west;
-
-                //Creating display lambda expression
+                
+                // Creating display lambda expression
                 Action<string> Display = str => Console.WriteLine(str);
                 Action<string> inputDisplay = str => Console.Write(str);
 
                 //loading player stats
                 int roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == player.Location);
 
-                //main menu
-                //Display player menu
+                // Main menu
+                // Display player menu
                 Display($"Currently, you are in the " + Rooms.Room[roomIndex].Name);
                 Display(Rooms.Room[roomIndex].Description);
-                Display("Make your choice, Ring Bearer.");
+                Printer.Title("Make your choice, Ring Bearer.");
                 Display($"Hp: " + player.HP + "||type (help) for controls.");
 
+                // While the user is still alive, the text adventure will still ask the user for input.
                 while (exit == false)
                 {
                     inputDisplay("> ");
                     string input = Console.ReadLine();
                     
-                    //Player input options
+                    /*
+                     * 
+                     */
                     switch (input.ToLower())
                     {
 
-                    //Look Menu
+                    // Look Menu
                         case "look":
                             north = Rooms.Room[roomIndex].Exit[0];
                             east = Rooms.Room[roomIndex].Exit[1];
@@ -79,7 +93,7 @@ namespace ConsoleUI
                                 Display("\n   " + Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].Name);
                             }
 
-                            Display("\n\nExits:");
+                                Display("\n\nExits:");
                             if (north > 0)
                             {
                                 Display("   North: " + Rooms.Room[Rooms.Room.FindIndex(a => a.Room_ID == north)].Name);
@@ -98,7 +112,7 @@ namespace ConsoleUI
                             }
                             break;
 
-                        //Movement
+                        // Movement
                         case "n":
                             north = Rooms.Room[roomIndex].Exit[0];
 
@@ -149,7 +163,7 @@ namespace ConsoleUI
                             }
                             break;
 
-                        //Attack
+                        // Attack
                         case "attack":
                             if (Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP > 0)
                             {
@@ -157,18 +171,20 @@ namespace ConsoleUI
                                  
                                 if (Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP <= 0)
                                 {
-                                    Display("\nYou killed the foul beast!");
+                                    Printer.DeathEvent("\nYou killed the foul beast!");
                                     Display("You were left with: " + player.HP + "HP");
+                                    
                                 }
                                 else
                                 {
                                     Display("\nThe enemy still has " + Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP + "HP");
                                     Display("You have: " + player.HP + "HP ");
+                                    Printer.mobDialogue(Combat.mobDialogue(mobDialogueAlert));
                                 }
                             }
                             else
                             {
-                                Display("The moster has already been slain!");
+                                Printer.Warning("The moster has already been slain!");
                             }
 
                             if (player.HP > 0)
@@ -176,15 +192,15 @@ namespace ConsoleUI
                                 Display("");
                                 continue;
                             }
-                            Display("You Died!");
-                            Display("\nBetter luck next time!");
+                            Printer.playerDeath("You Died!");
+                            Printer.playerDeath("\nBetter luck next time!");
                             exit = true;
                             break;
 
-                        //Settings
+                        // Settings
                         case "exit":
-                            Display("Until next time, Ring Bearer.");
-                            Display("Press Enter to exit the program.");
+                            Printer.Title("Until next time, Ring Bearer.");
+                            Printer.Title("Press Enter to exit the program.");
                             Display("");
                             exit = true;
                             break;

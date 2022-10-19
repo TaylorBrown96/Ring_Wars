@@ -30,6 +30,7 @@ namespace DestinationUnknownLibrary
 		}
 		public string Effects { get; set; }
 
+		// Calls the DB Query and Creates the objects from the DB records
 		public static void Load()
 		{
 			Potion = SqliteDataAccess.LoadPotions();

@@ -30,6 +30,7 @@ namespace DestinationUnknownLibrary
 		}
 		public bool QuestItem { get; set; }
 
+		// Calls the DB Query and Creates the objects from the DB records
 		public static void Load()
 		{
 			Treasure = SqliteDataAccess.LoadTreasures();
