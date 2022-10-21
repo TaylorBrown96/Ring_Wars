@@ -88,3 +88,14 @@ C:\Users\Jonesk6843\Downloads\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLi
 C:\Users\Jonesk6843\Downloads\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CopyComplete
 C:\Users\Jonesk6843\Downloads\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.dll
 C:\Users\Jonesk6843\Downloads\Ring_Wars-main\Ring_Wars-main\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.dll
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\bin\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\bin\Debug\Dapper.dll
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\bin\Debug\System.Data.SQLite.dll
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\bin\Debug\Dapper.xml
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\bin\Debug\System.Data.SQLite.xml
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.AssemblyReference.cache
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.csproj.CopyComplete
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.dll
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\DestinationUnknownLibrary\obj\Debug\DestinationUnknownLibrary.pdb

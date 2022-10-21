@@ -124,3 +124,19 @@ C:\Users\Jonesk6843\Downloads\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\
 C:\Users\Jonesk6843\Downloads\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
 C:\Users\Jonesk6843\Downloads\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\Jonesk6843\Downloads\Ring_Wars-main\Ring_Wars-main\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\RingWarsDB.db
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\Dapper.dll
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\DestinationUnknownLibrary.dll
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\System.Data.SQLite.dll
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\DestinationUnknownLibrary.pdb
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\Dapper.xml
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\bin\Debug\System.Data.SQLite.xml
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.csproj.AssemblyReference.cache
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\Parker Pawn\Downloads\Ring_Wars-Jonesk\Ring_Wars-Jonesk\ConsoleUI\obj\Debug\ConsoleUI.pdb
