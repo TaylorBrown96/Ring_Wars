@@ -34,15 +34,16 @@ namespace ConsoleUI
                 if (usrinp == player.Password)
                 {
                     string title = @"
-█▄▄▄▄ ▄█    ▄     ▄▀        ▄ ▄   ██   █▄▄▄▄   ▄▄▄▄▄   
-█  ▄▀ ██     █  ▄▀         █   █  █ █  █  ▄▀  █     ▀▄ 
-█▀▀▌  ██ ██   █ █ ▀▄      █ ▄   █ █▄▄█ █▀▀▌ ▄  ▀▀▀▀▄   
-█  █  ▐█ █ █  █ █   █     █  █  █ █  █ █  █  ▀▄▄▄▄▀    
-  █    ▐ █  █ █  ███       █ █ █     █   █             
- ▀       █   ██             ▀ ▀     █   ▀              
-                                   ▀                    ";
+                                                       
+ █▄▄▄▄ ▄█    ▄     ▄▀        ▄ ▄   ██   █▄▄▄▄   ▄▄▄▄▄   
+ █  ▄▀ ██     █  ▄▀         █   █  █ █  █  ▄▀  █     ▀▄ 
+ █▀▀▌  ██ ██   █ █ ▀▄      █ ▄   █ █▄▄█ █▀▀▌ ▄  ▀▀▀▀▄   
+ █  █  ▐█ █ █  █ █   █     █  █  █ █  █ █  █  ▀▄▄▄▄▀    
+   █    ▐ █  █ █  ███       █ █ █     █   █             
+  ▀       █   ██             ▀ ▀     █   ▀              
+                                   ▀                   ";
 
-                    Display(title);
+                    Printer.Title(title);
 
                     Display("\nWelcome to Ring Wars! You will fight incredible monsters and find treasure all the like!\n");
                     CoreGame.UserMenu(player);
