@@ -194,6 +194,8 @@ namespace ConsoleUI
                             }
                             Printer.playerDeath("You Died!");
                             Printer.playerDeath("\nBetter luck next time!");
+                            Printer.playerDeath("Press Enter to exit the program.");
+                            Console.ReadLine();
                             exit = true;
                             break;
 
@@ -201,7 +203,7 @@ namespace ConsoleUI
                         case "exit":
                             Printer.Title("Until next time, Ring Bearer.");
                             Printer.Title("Press Enter to exit the program.");
-                            Display("");
+                            Console.ReadLine();
                             exit = true;
                             break;
                         case "help":
