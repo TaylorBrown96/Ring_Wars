@@ -26,7 +26,7 @@ namespace ConsoleUI
         {
             try
             {
-                // Variables
+                //Declaring and assigning Variables
                 bool exit = false;
                 int north;
                 int east;
@@ -47,25 +47,30 @@ namespace ConsoleUI
                 Printer.Title("Make your choice, Ring Bearer.");
                 Display($"Hp: " + player.HP + "||type (help) for controls.");
 
-                // While the user is still alive, the text adventure will still ask the user for input.
+                // While the user Hp > 0, the text adventure will still ask the user for input.
                 while (exit == false)
                 {
                     inputDisplay("> ");
                     string input = Console.ReadLine();
-                    
-                    /*
-                     * 
+                     
+                    /* Player Menu Switch
+                     * Look
+                     * Movement
+                     * Attack
+                     * Exit/Help
                      */
                     switch (input.ToLower())
                     {
 
-                    // Look Menu
+                        // Look Menu
                         case "look":
+                            //Assigning exits for each direction according to the current room.
                             north = Rooms.Room[roomIndex].Exit[0];
                             east = Rooms.Room[roomIndex].Exit[1];
                             south = Rooms.Room[roomIndex].Exit[2];
                             west = Rooms.Room[roomIndex].Exit[3];
 
+                            //Printing out current room objects
                             Display("\nRoom Name: \n   " + Rooms.Room[roomIndex].Name);
                             Display("\n\nRoom Description: \n   " + Rooms.Room[roomIndex].Description);
                             Display("\n\nItems:");
@@ -92,7 +97,6 @@ namespace ConsoleUI
                             {
                                 Display("\n   " + Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].Name);
                             }
-
                                 Display("\n\nExits:");
                             if (north > 0)
                             {
@@ -112,10 +116,9 @@ namespace ConsoleUI
                             }
                             break;
 
-                        // Movement
+                        // Movement key cases
                         case "n":
                             north = Rooms.Room[roomIndex].Exit[0];
-
                             if (north > 0)
                             {
                                 roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == north);
@@ -163,7 +166,7 @@ namespace ConsoleUI
                             }
                             break;
 
-                        // Attack
+                        // Attack case
                         case "attack":
                             if (Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP > 0)
                             {
@@ -186,21 +189,21 @@ namespace ConsoleUI
                             {
                                 Printer.Warning("The moster has already been slain!");
                             }
-
                             if (player.HP > 0)
                             {
                                 Display("");
                                 continue;
                             }
+
+                            //Displaying death message
                             Printer.playerDeath("You Died!");
                             Printer.playerDeath("\nBetter luck next time!");
                             Printer.playerDeath("Press Enter to exit the program.");
                             Console.ReadLine();
-
                             exit = true;
                             break;
 
-                        // Settings
+                        //Exit case
                         case "exit":
                             Printer.Title("Until next time, Ring Bearer.");
                             Printer.Title("Press Enter to exit the program.");
@@ -208,6 +211,8 @@ namespace ConsoleUI
                             Display("");
                             exit = true;
                             break;
+
+                        //Help Case
                         case "help":
                             {
                                 Display("Commands:");
@@ -225,6 +230,8 @@ namespace ConsoleUI
                                 Console.ReadLine();
                             }
                             break;
+
+                        //If no case match, display default message
                         default:
                             {
                                 Display("Apologies. Come again?");
