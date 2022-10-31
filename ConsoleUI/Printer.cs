@@ -8,7 +8,18 @@ namespace ConsoleUI
 {
     class Printer
     {
-        //Creating Console Colors
+        //
+        /*Creating Console Colors
+        * Title Color (Dark Yellow)
+        * Warning Message (Magenta)
+        * Damage Message (Red)
+        * Treasure Message (Dark Yellow)
+        * Loot Message (Cyan)
+        * Death Event Message (Dark Magenta)
+        * Healing Message (Green)
+        * Player Death Message (Dark Red)
+        * Mob Dialogue (Red)
+        */
         public static void Title(string message)
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;

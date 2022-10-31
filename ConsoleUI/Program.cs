@@ -20,17 +20,19 @@ namespace ConsoleUI
         {
             //Creating display lambda expression
             Action<string> Display = str => Console.WriteLine(str); //Display for strings
-            Action<string> inputDisplay = str => Console.Write(str); //Display for inputs
-            //load the game world
+            Action<string> inputDisplay = str => Console.Write(str); //Display for inputs strings
+
+            //Loading game world and player
             Console.Title = "Ring Wars";
             Load.Game();
             Player player = Player.Load();
 
+            //Asks the user for password input
+            //If password is correct, display title card.
             while (true)
             {
                 inputDisplay("Please enter your password: ");
                 string usrinp = Console.ReadLine();
-
                 if (usrinp == player.Password)
                 {
                     string title = @"
@@ -44,7 +46,6 @@ namespace ConsoleUI
                                    ▀                   ";
 
                     Printer.Title(title);
-
                     Display("\nWelcome to Ring Wars! You will fight incredible monsters and find treasure all the like!\n");
                     CoreGame.UserMenu(player);
                     break;
