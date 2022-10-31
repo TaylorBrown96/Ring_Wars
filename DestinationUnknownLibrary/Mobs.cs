@@ -19,6 +19,7 @@ namespace DestinationUnknownLibrary
 		// Stores all created mob objects
 		public static List<Mobs> Mob = new List<Mobs>();
 
+		//Constructor
 		public Mobs(int id, string name, string race, int hp, int ad, string weapon, string description, List<int> inventory) 
 			: base(id, name, race, hp)
 		{
@@ -32,6 +33,7 @@ namespace DestinationUnknownLibrary
 			Inventory = inventory;
 		}
 
+		//Properties
 		public int AD { get; set; }
 		public string Weapon { get; set; }
 		public string Description { get; set; }

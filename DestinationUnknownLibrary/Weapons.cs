@@ -19,6 +19,7 @@ namespace DestinationUnknownLibrary
 		// Stores all created weapon objects
 		public static List<Weapons> Weapon = new List<Weapons>();
 
+		//Constructor
 		public Weapons(int id, string name, string description, int price, string dmgtype, int damage)
 			: base(id, name, price, description)
 		{
@@ -29,6 +30,8 @@ namespace DestinationUnknownLibrary
             DmgType = dmgtype;
             Damage = damage;
 		}
+
+		//Properties
 		public string DmgType { get; set; }
 		public int Damage { get; set; }
 

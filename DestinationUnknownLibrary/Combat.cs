@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace DestinationUnknownLibrary
 {
-    //Creating Delegate
+    //Creating mob dialogue Delegate
     public delegate void combatDialogue(string dialgoue);
     public class Combat
     {
@@ -22,6 +22,7 @@ namespace DestinationUnknownLibrary
             //Creating display lambda expression
             Action<string> Display = str => Console.WriteLine(str);
 
+            //Creating and applying random damage number to mob and player attack
             Random rnd = new Random();
             Mob_AD = rnd.Next(0, Mob_AD);
             Mobs.Mob[Mobs.Mob.FindIndex(a => a.Id == Rooms.Room[roomIndex].Mob[0])].HP -= Player_AD;

@@ -19,6 +19,7 @@ namespace DestinationUnknownLibrary
 		// Stores all created treasure objects
 		public static List<Treasures> Treasure = new List<Treasures>();
 
+		//Constructor
 		public Treasures(int id, string name, int price, bool questItem, string description)
 			: base(id, name, price, description)
 		{
@@ -28,6 +29,8 @@ namespace DestinationUnknownLibrary
 			QuestItem = questItem;
 			Description = description;
 		}
+
+		//Properties
 		public bool QuestItem { get; set; }
 
 		public static void Load()

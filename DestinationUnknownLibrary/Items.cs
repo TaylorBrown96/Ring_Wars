@@ -19,6 +19,7 @@ namespace DestinationUnknownLibrary
 		// Stores all created item objects
 		public static List<Items> items = new List<Items>();
 
+		//Constructor
         public Items(int id, string name, int price, bool questItem, bool required, string description)
 			:base(id,name,price,description)
 		{
@@ -29,6 +30,8 @@ namespace DestinationUnknownLibrary
 			Required = required;
 			Description = description;
 		}
+
+		//Properties
 		public bool QuestItem { get; set; }
 		public bool Required { get; set; }
 
