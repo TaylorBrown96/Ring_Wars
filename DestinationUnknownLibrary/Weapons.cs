@@ -31,7 +31,6 @@ namespace DestinationUnknownLibrary
             Damage = damage;
 		}
 
-		//Properties
 		public string DmgType { get; set; }
 		public int Damage { get; set; }
 
