@@ -116,7 +116,7 @@ namespace ConsoleUI
                             }
                             break;
 
-                        // Movement character case
+                        // Movement direction character
                         case "n":
                             north = Rooms.Room[roomIndex].Exit[0];
                             if (north > 0)
