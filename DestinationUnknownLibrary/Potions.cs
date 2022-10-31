@@ -19,6 +19,7 @@ namespace DestinationUnknownLibrary
 		// Stores all created potion objects
 		public static List<Potions> Potion = new List<Potions>();
 
+		//Constructor
 		public Potions(int id, string name, int price, string effects, string description)
 			: base(id, name, price, description)
 		{
@@ -28,6 +29,8 @@ namespace DestinationUnknownLibrary
 			Effects = effects;
 			Description = description;
 		}
+
+		//Properties
 		public string Effects { get; set; }
 
 		public static void Load()
