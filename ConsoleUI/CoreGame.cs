@@ -11,11 +11,11 @@ using System.Drawing;
 
 namespace ConsoleUI
 {
-    //Creating user Delegate
+    // Creating user Delegate
     public delegate void userInfo(string str);
     public class CoreGame
     {
-        //Sets up combat delegate alert
+        // Sets up combat delegate alert
         private static void mobDialogueAlert(string mobDialogue)
         {
             Console.Write(mobDialogue);
@@ -26,7 +26,7 @@ namespace ConsoleUI
         {
             try
             {
-                //Declaring and assigning Variables
+                // Declaring and assigning Variables
                 bool exit = false;
                 int north;
                 int east;
@@ -37,7 +37,7 @@ namespace ConsoleUI
                 Action<string> Display = str => Console.WriteLine(str);
                 Action<string> inputDisplay = str => Console.Write(str);
 
-                //loading player stats
+                // loading player stats
                 int roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == player.Location);
 
                 // Main menu
@@ -47,7 +47,7 @@ namespace ConsoleUI
                 Printer.Title("Make your choice, Ring Bearer.");
                 Display($"Hp: " + player.HP + "||type (help) for controls.");
 
-                // While the user Hp > 0, the text adventure will still ask the user for input.
+                // While the user is still alive, the text adventure will still ask the user for input.
                 while (exit == false)
                 {
                     inputDisplay("> ");
@@ -64,13 +64,13 @@ namespace ConsoleUI
 
                         // Look Menu
                         case "look":
-                            //Assigning exits for each direction according to the current room.
+                            // Assigning exits for each direction according to the current room.
                             north = Rooms.Room[roomIndex].Exit[0];
                             east = Rooms.Room[roomIndex].Exit[1];
                             south = Rooms.Room[roomIndex].Exit[2];
                             west = Rooms.Room[roomIndex].Exit[3];
 
-                            //Printing out current room objects
+                            // Printing out current room objects
                             Display("\nRoom Name: \n   " + Rooms.Room[roomIndex].Name);
                             Display("\n\nRoom Description: \n   " + Rooms.Room[roomIndex].Description);
                             Display("\n\nItems:");
@@ -116,7 +116,7 @@ namespace ConsoleUI
                             }
                             break;
 
-                        // Movement key cases
+                        // Movement character case
                         case "n":
                             north = Rooms.Room[roomIndex].Exit[0];
                             if (north > 0)
@@ -195,7 +195,7 @@ namespace ConsoleUI
                                 continue;
                             }
 
-                            //Displaying death message
+                            // Displaying death message
                             Printer.playerDeath("You Died!");
                             Printer.playerDeath("\nBetter luck next time!");
                             Printer.playerDeath("Press Enter to exit the program.");
@@ -203,7 +203,7 @@ namespace ConsoleUI
                             exit = true;
                             break;
 
-                        //Exit case
+                        // Exit case
                         case "exit":
                             Printer.Title("Until next time, Ring Bearer.");
                             Printer.Title("Press Enter to exit the program.");
@@ -212,7 +212,7 @@ namespace ConsoleUI
                             exit = true;
                             break;
 
-                        //Help Case
+                        // Help Case
                         case "help":
                             {
                                 Display("Commands:");
@@ -231,7 +231,7 @@ namespace ConsoleUI
                             }
                             break;
 
-                        //If no case match, display default message
+                        // If no case match, display default message
                         default:
                             {
                                 Display("Apologies. Come again?");
