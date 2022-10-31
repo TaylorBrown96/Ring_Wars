@@ -19,6 +19,7 @@ namespace DestinationUnknownLibrary
 		// Stores all created room objects
 		public static List<Rooms> Room = new List<Rooms>();
 
+		// Constructor
 		public Rooms(int room_ID, string name, string description, List<int> mobs, List<int> loot, List<int> exits)
 		{
 			Room_ID = room_ID;

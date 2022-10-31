@@ -30,7 +30,6 @@ namespace DestinationUnknownLibrary
 			Description = description;
 		}
 
-		//Properties
 		public bool QuestItem { get; set; }
 
 		public static void Load()

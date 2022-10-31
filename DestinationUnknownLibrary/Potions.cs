@@ -30,7 +30,6 @@ namespace DestinationUnknownLibrary
 			Description = description;
 		}
 
-		//Properties
 		public string Effects { get; set; }
 
 		public static void Load()
