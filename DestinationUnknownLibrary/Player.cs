@@ -16,8 +16,7 @@ namespace DestinationUnknownLibrary
 {
 	public class Player : LivingCreature
 	{
-        // Constructor
-        public Player(int id, string name, string password, string race, string Pclass, int hp, int location, List<int> inventory, List<int> quests)
+		public Player(int id, string name, string password, string race, string Pclass, int hp, int location, List<int> inventory, List<int> quests)
 			: base(id, name, race, hp)
 		{
 			Id = id;
