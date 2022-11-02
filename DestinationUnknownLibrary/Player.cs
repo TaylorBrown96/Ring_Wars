@@ -101,24 +101,24 @@ namespace DestinationUnknownLibrary
             valid = false;
             while (!valid)
             {
-                Console.WriteLine("\nOptions: Elf, Human, Dwarf, Ogre, and Worgen");
+                Console.WriteLine("\nOptions: Roach, Pill Bug, Horsefly, Beetle, and Caterpillar");
                 Console.Write("Please enter in a race: ");
                 race = Console.ReadLine();
                 switch (race.ToLower())
                 {
-                    case "elf":
+                    case "Roach":
                         valid = true;
                         break;
-                    case "human":
+                    case "Pill Bug":
                         valid = true;
                         break;
-                    case "dwarf":
+                    case "Horsefly":
                         valid = true;
                         break;
-                    case "ogre":
+                    case "Beetle":
                         valid = true;
                         break;
-                    case "worgen":
+                    case "Catterpillar":
                         valid = true;
                         break;
                     default:
@@ -131,7 +131,7 @@ namespace DestinationUnknownLibrary
             valid = false;
             while (!valid)
             {
-                Console.WriteLine("\nOptions: Warrior, Hunter, Mage, Rouge, and Shawman");
+                Console.WriteLine("\nOptions: Warrior, Hunter, Mage, Rouge, and Shaman");
                 Console.Write("Please enter in a class: ");
                 Pclass = Console.ReadLine();
 
