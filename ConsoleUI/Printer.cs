@@ -29,56 +29,50 @@ namespace ConsoleUI
 
         public static void Warning(string message)
         {
-            Console.BackgroundColor = ConsoleColor.Magenta;
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine(message);
             Console.ResetColor();
         }
         public static void Damage(string message)
         {
-            Console.BackgroundColor = ConsoleColor.Red;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(message);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write(message);
             Console.ResetColor();
         }
         public static void Treasure(string message)
         {
-            Console.BackgroundColor = ConsoleColor.DarkYellow;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(message);
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write(message);
             Console.ResetColor();
         }
         public static void loot(string message)
         {
-            Console.BackgroundColor = ConsoleColor.Cyan;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(message);
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write(message);
             Console.ResetColor();
         }
         public static void DeathEvent(string message)
         {
-            Console.BackgroundColor = ConsoleColor.DarkMagenta;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(message);
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.Write(message);
             Console.ResetColor();
         }
         public static void Healing(string message)
         {
-            Console.BackgroundColor = ConsoleColor.Green;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(message);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(message);
             Console.ResetColor();
         }
-        public static void playerDeath(string message)
+        public static void Alert(string message)
         {
             Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine(message);
+            Console.Write(message);
             Console.ResetColor();
         }
         public static void mobDialogue(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(message);
+            Console.Write(message);
             Console.ResetColor();
         }
     }
