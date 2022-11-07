@@ -17,7 +17,7 @@ namespace DestinationUnknownLibrary
 	public class Treasures : Item
 	{
 		// Stores all created treasure objects
-		public static List<Treasures> Treasure = new List<Treasures>();
+		public static List<Item> Treasure = new List<Item>();
 
 		//Constructor
 		public Treasures(int id, string name, int price, bool questItem, string description)
@@ -31,10 +31,5 @@ namespace DestinationUnknownLibrary
 		}
 
 		public bool QuestItem { get; set; }
-
-		public static void Load()
-		{
-			Treasure = SqliteDataAccess.LoadTreasures();
-		}
 	}
 }

@@ -20,10 +20,6 @@ namespace DestinationUnknownLibrary
         public static void Game()
         {
             Rooms.Load();
-            Weapons.Load();
-            Potions.Load();
-            Treasures.Load();
-            Items.Load();
             Mobs.Load();
         }
     }

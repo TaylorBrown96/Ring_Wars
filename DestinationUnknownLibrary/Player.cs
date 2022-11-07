@@ -8,15 +8,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 
 namespace DestinationUnknownLibrary
 {
 	public class Player : LivingCreature
 	{
-		public Player(int id, string name, string password, string race, string Pclass, int hp, int location, List<int> inventory, List<int> quests)
+		public Player(int id, string name, string password, string race, string Pclass, int hp, int location, List<Item> inventory, List<int> quests)
 			: base(id, name, race, hp)
 		{
 			Id = id;
@@ -33,7 +30,7 @@ namespace DestinationUnknownLibrary
 		public string Password { get; set; }
 		public string Class { get; set; }
 		public int Location { get; set; }
-		public List<int> Inventory { get; set; }
+		public List<Item> Inventory { get; set; }
 		public List<int> Quests { get; set; }
 
 
@@ -58,7 +55,7 @@ namespace DestinationUnknownLibrary
             string Pclass = "";
             int hp = 100;
             int location = 0;
-            List<int> inv = new List<int>();
+            List<Item> inv = new List<Item>();
             List<int> quests = new List<int>();
 
             id = 0;
@@ -106,19 +103,19 @@ namespace DestinationUnknownLibrary
                 race = Console.ReadLine();
                 switch (race.ToLower())
                 {
-                    case "Roach":
+                    case "roach":
                         valid = true;
                         break;
-                    case "Pill Bug":
+                    case "pill bug":
                         valid = true;
                         break;
-                    case "Horsefly":
+                    case "horsefly":
                         valid = true;
                         break;
-                    case "Beetle":
+                    case "beetle":
                         valid = true;
                         break;
-                    case "Catterpillar":
+                    case "catterpillar":
                         valid = true;
                         break;
                     default:
@@ -161,9 +158,15 @@ namespace DestinationUnknownLibrary
 
             hp = 100;
             location = 100;
-            inv.Add(200);
-            inv.Add(300);
-            inv.Add(302);
+
+            Weapons weapon = new Weapons(200, "Rusty Nail", "A rusty nail found on the ground", 1, "Normal", 5);
+            inv.Add(weapon);
+
+            Potions potion1 = new Potions(300, "Bread Crumb", 10, 30, "Heals you for 30% of your health");
+            inv.Add(potion1) ;
+
+            Potions potion2 = new Potions(302, "Strange Liquid", 10, 30, "Gives you 30% of your mana");
+            inv.Add(potion2);
 
             Player player = SqliteDataAccess.InsertPlayer(id, name, password, race, Pclass, hp, location, inv, quests);
 

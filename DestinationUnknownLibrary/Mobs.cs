@@ -20,7 +20,7 @@ namespace DestinationUnknownLibrary
 		public static List<Mobs> Mob = new List<Mobs>();
 
 		// Constructor
-		public Mobs(int id, string name, string race, int hp, int ad, string weapon, string description, List<int> inventory) 
+		public Mobs(int id, string name, string race, int hp, int ad, string weapon, string description, List<Item> inventory) 
 			: base(id, name, race, hp)
 		{
 			Id = id;
@@ -36,7 +36,7 @@ namespace DestinationUnknownLibrary
 		public int AD { get; set; }
 		public string Weapon { get; set; }
 		public string Description { get; set; }
-		public List<int> Inventory { get; set; }
+		public List<Item> Inventory { get; set; }
 
         // Calls the DB Query and Creates the objects from the DB records
         public static void Load()
