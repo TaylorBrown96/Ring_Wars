@@ -17,7 +17,7 @@ namespace DestinationUnknownLibrary
 	public class Weapons : Item
 	{
 		// Stores all created weapon objects
-		public static List<Weapons> Weapon = new List<Weapons>();
+		public static List<Item> Weapon = new List<Item>();
 
 		//Constructor
 		public Weapons(int id, string name, string description, int price, string dmgtype, int damage)
@@ -33,10 +33,5 @@ namespace DestinationUnknownLibrary
 
 		public string DmgType { get; set; }
 		public int Damage { get; set; }
-
-		public static void Load()
-		{
-			Weapon = SqliteDataAccess.LoadWeapons();
-		}
 	}
 }

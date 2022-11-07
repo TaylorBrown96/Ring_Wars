@@ -17,10 +17,10 @@ namespace DestinationUnknownLibrary
 	public class Potions : Item
 	{
 		// Stores all created potion objects
-		public static List<Potions> Potion = new List<Potions>();
+		public static List<Item> Potion = new List<Item>();
 
 		//Constructor
-		public Potions(int id, string name, int price, string effects, string description)
+		public Potions(int id, string name, int price, int effects, string description)
 			: base(id, name, price, description)
 		{
 			Id = id;
@@ -30,11 +30,6 @@ namespace DestinationUnknownLibrary
 			Description = description;
 		}
 
-		public string Effects { get; set; }
-
-		public static void Load()
-		{
-			Potion = SqliteDataAccess.LoadPotions();
-		}
+		public int Effects { get; set; }
 	}
 }

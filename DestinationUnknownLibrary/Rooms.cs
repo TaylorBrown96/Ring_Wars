@@ -20,7 +20,7 @@ namespace DestinationUnknownLibrary
 		public static List<Rooms> Room = new List<Rooms>();
 
 		// Constructor
-		public Rooms(int room_ID, string name, string description, List<int> mobs, List<int> loot, List<int> exits)
+		public Rooms(int room_ID, string name, string description, List<LivingCreature> mobs, List<Item> loot, List<int> exits)
 		{
 			Room_ID = room_ID;
 			Name = name;
@@ -33,8 +33,8 @@ namespace DestinationUnknownLibrary
 		public int Room_ID { get; set; }
 		public string Name { get; set; }
 		public string Description { get; set; }
-		public List<int> Mob { get; set; }
-		public List<int> Loot { get; set; }
+		public List<LivingCreature> Mob { get; set; }
+		public List<Item> Loot { get; set; }
 		public List<int> Exit { get; set; }
 
 		public static void Load()

@@ -17,7 +17,7 @@ namespace DestinationUnknownLibrary
 	public class Items : Item
 	{
 		// Stores all created item objects
-		public static List<Items> items = new List<Items>();
+		public static List<Item> items = new List<Item>();
 
 		// Constructor
         public Items(int id, string name, int price, bool questItem, bool required, string description)
@@ -33,11 +33,5 @@ namespace DestinationUnknownLibrary
 
 		public bool QuestItem { get; set; }
 		public bool Required { get; set; }
-
-		// Calls the DB Query and Creates the objects from the DB records
-		public static void Load()
-		{
-			items = SqliteDataAccess.LoadItems();
-		}
     }
 }
