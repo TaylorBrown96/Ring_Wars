@@ -1,0 +1,76 @@
+﻿<Window x:Class="WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp"
+        mc:Ignorable="d"
+        Title="Ring Wars" Height="550" Width="1000" Background="Black" Foreground="White" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="59*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="409*"/>
+            <ColumnDefinition Width="591*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Dialog Output -->
+        <TextBox x:Name="TB_Dialog" HorizontalAlignment="Left" Margin="22,12,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361" Height="394" VerticalContentAlignment="Bottom" Grid.RowSpan="2"/>
+
+        <!-- Navigation -->
+        <Label Grid.Column="1" Content="Movement:" HorizontalAlignment="Left" Margin="14,0,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" FontWeight="Bold"/>
+        <Button x:Name="Btn_West" Content=" ← " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="92,25,0,0" Grid.Column="1" Grid.Row="1" Height="20" Width="21"/>
+        <Button x:Name="Btn_North" Content=" ↑ " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114,4,0,0" Grid.Column="1" Height="20" Width="16" Grid.Row="1"/>
+        <Button x:Name="Btn_South" Content=" ↓ " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114,46,0,0" Grid.Column="1" Grid.Row="1" Height="20" Width="16"/>
+        <Button x:Name="Btn_East" Content=" → " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,25,0,0" Grid.Column="1" Grid.Row="1" Height="20" Width="21"/>
+
+        <!-- Player health bar -->
+        <ProgressBar x:Name="PB_PlayerHealth" HorizontalAlignment="Left" Height="15" Margin="35,417,0,0" VerticalAlignment="Top" Width="125" Grid.Row="1"/>
+        <Label Content="Player" HorizontalAlignment="Left" Margin="35,391,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" Height="26" Width="42"/>
+
+        <!-- Enemy health bar and name -->
+        <ProgressBar x:Name="PB_EnemyHealth" HorizontalAlignment="Left" Height="15" Margin="178,417,0,0" VerticalAlignment="Top" Width="126" Grid.Row="1"/>
+        <Label Content="Enemy: " HorizontalAlignment="Center" Margin="0,391,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" Height="26" Width="52"/>
+        <Label x:Name="L_EnemyName" Content="name" HorizontalAlignment="Left" Margin="221,391,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" Height="26" Width="40"/>
+
+        <!-- Room inventory -->
+        <ListBox x:Name="LB_RoomInv" Margin="265,202,159,0" VerticalAlignment="Top" Height="222" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Room Inventory:" HorizontalAlignment="Left" Margin="268,176,0,0" VerticalAlignment="Top" Foreground="White" Grid.Column="1" Grid.Row="1" Height="26" Width="111" FontWeight="Bold"/>
+
+        <!-- Player inventory -->
+        <ListBox x:Name="LB_PlayerInv" Margin="60,0,370,61" VerticalAlignment="Bottom" Height="222" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Player Inventory:" HorizontalAlignment="Left" Margin="60,176,0,0" VerticalAlignment="Top" Foreground="White" Grid.Column="1" Grid.Row="1" Height="26" Width="121" FontWeight="Bold"/>
+
+        <!-- Item transfer buttons -->
+        <Button x:Name="Btn_PlayerToRoom" Content=" → " HorizontalAlignment="Left" Margin="228,285,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Click="Btn_PlayerToRoom_Click" Height="20" Width="21"/>
+        <Button x:Name="Btn_RoomToPlayer" Content=" ← " HorizontalAlignment="Left" Margin="228,313,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Click="Btn_RoomToPlayer_Click" Height="20" Width="21"/>
+
+        <!-- Combat Button -->
+        <Button x:Name="Btn_Attack" Content=" Attack " HorizontalAlignment="Left" Margin="325,404,0,0" VerticalAlignment="Top" Grid.Row="1" Height="20" Width="44"/>
+
+        <!-- Exit Information -->
+        <Label Grid.Column="1" Content="Exits:" HorizontalAlignment="Left" Margin="239,0,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="26" Width="36" FontWeight="Bold"/>
+        <!-- North -->
+        <Label Grid.Column="1" Content="North:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Height="26" Width="44" Margin="285,24,0,0" Grid.RowSpan="2"/>
+        <Label x:Name="L_NExit" Grid.Column="1" Content="N_Exit" HorizontalAlignment="Left" Margin="323,0,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White"/>
+        <!-- South -->
+        <Label Grid.Column="1" Content="South:" HorizontalAlignment="Left" Margin="285,25,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="26" Width="44"/>
+        <Label x:Name="L_SExit" Grid.Column="1" Content="S_Exit" HorizontalAlignment="Left" Margin="323,25,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White"/>
+        <!-- East -->
+        <Label Grid.Column="1" Content="East:" HorizontalAlignment="Left" Margin="295,51,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="26" Width="34"/>
+        <Label x:Name="L_EExit" Grid.Column="1" Content="E_Exit" HorizontalAlignment="Left" Margin="323,51,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White"/>
+        <!-- West -->
+        <Label Grid.Column="1" Content="West:" HorizontalAlignment="Left" Margin="289,79,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="26" Width="40"/>
+        <Label x:Name="L_WExit" Grid.Column="1" Content="W_Exit" HorizontalAlignment="Left" Margin="323,79,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White"/>
+
+        <!-- Examine -->
+        <Button Grid.Column="1" Content=" 🔎 " HorizontalAlignment="Left" Margin="225,389,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Window>
+
