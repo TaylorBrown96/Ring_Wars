@@ -10,23 +10,63 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows;
+using System.Runtime.InteropServices;
+using System.Diagnostics;
 using DestinationUnknownLibrary;
+using System.Threading;
 
 namespace ConsoleUI
 {
     internal class Program
     {
+        //Creating display lambda expression
+        public static Action<string> Display = str => Console.WriteLine(str); //Display for strings
+        public static Action<string> inputDisplay = str => Console.Write(str); //Display for inputs strings
+
+        public static Player player = null;
+
+        [STAThread]
         static void Main(string[] args)
         {
-            //Creating display lambda expression
-            Action<string> Display = str => Console.WriteLine(str); //Display for strings
-            Action<string> inputDisplay = str => Console.Write(str); //Display for inputs strings
-
             //Loading game world and player
             Console.Title = "Ring Wars";
             Load.Game();
-            Player player = Player.Load();
+            player = Player.Load();
 
+            bool keep_going = true;
+            while (keep_going)
+            {
+                Console.WriteLine("How would you like to play ring wars?");
+                Console.WriteLine("\t1. Console");
+                Console.WriteLine("\t2. WPF App");
+                Console.WriteLine("\t3. Winform");
+                Console.WriteLine("\t4. Exit");
+                Console.Write(">");
+                string usrInp = Console.ReadLine();
+
+                switch (usrInp)
+                {
+                    case "1":
+                        LogIn();
+                        break;
+                    case "2":
+                        LoadWPF();
+                        break;
+                    case "3":
+                        break;
+                    case "4":
+                        keep_going = false;
+                        break;
+                    default:
+                        Console.WriteLine("Please enter a valid option!");
+                        break;
+                }
+            }
+        }
+
+        public static void LogIn()
+        {
             //Asks the user for password input
             //If password is correct, display title card.
             while (true)
@@ -56,5 +96,22 @@ namespace ConsoleUI
                 }
             }
         }
+
+        private static void LoadWPF()
+        {
+            //ShowWindow(GetConsoleWindow(), SW_HIDE);
+            Application app = new Application();
+            app.Run(new WPFLogin.MainWindow(player));
+        }
+
+        [DllImport("kernel32.dll")]
+        static extern IntPtr GetConsoleWindow();
+
+        [DllImport("user32.dll")]
+        public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+        // Hide and Show states
+        public const int SW_HIDE = 0;
+        public const int SW_SHOW = 5;
     }
 }

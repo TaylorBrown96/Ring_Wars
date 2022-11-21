@@ -38,6 +38,8 @@
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -50,6 +52,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CoreGame.cs" />
@@ -80,6 +83,14 @@
     <ProjectReference Include="..\DestinationUnknownLibrary\DestinationUnknownLibrary.csproj">
       <Project>{6706c168-2901-4cbc-b750-3695dc3b43fa}</Project>
       <Name>DestinationUnknownLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFApp\WPFApp.csproj">
+      <Project>{7c920991-0f59-48c0-9acc-becde1bd1d7f}</Project>
+      <Name>WPFApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFLogin\WPFLogin.csproj">
+      <Project>{141e23e6-8221-49dd-bd05-fa96c9c7b751}</Project>
+      <Name>WPFLogin</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
