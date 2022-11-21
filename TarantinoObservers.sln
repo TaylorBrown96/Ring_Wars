@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32819.101
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{A06B4076-CD7C-4B5E-B804-945C55BC647C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DestinationUnknownLibrary", "DestinationUnknownLibrary\DestinationUnknownLibrary.csproj", "{6706C168-2901-4CBC-B750-3695DC3B43FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFApp", "WPFApp\WPFApp.csproj", "{7C920991-0F59-48C0-9ACC-BECDE1BD1D7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFLogin", "WPFLogin\WPFLogin.csproj", "{141E23E6-8221-49DD-BD05-FA96C9C7B751}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{6706C168-2901-4CBC-B750-3695DC3B43FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6706C168-2901-4CBC-B750-3695DC3B43FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6706C168-2901-4CBC-B750-3695DC3B43FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C920991-0F59-48C0-9ACC-BECDE1BD1D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C920991-0F59-48C0-9ACC-BECDE1BD1D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C920991-0F59-48C0-9ACC-BECDE1BD1D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C920991-0F59-48C0-9ACC-BECDE1BD1D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{141E23E6-8221-49DD-BD05-FA96C9C7B751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{141E23E6-8221-49DD-BD05-FA96C9C7B751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{141E23E6-8221-49DD-BD05-FA96C9C7B751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{141E23E6-8221-49DD-BD05-FA96C9C7B751}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
