@@ -28,7 +28,7 @@ namespace DestinationUnknownLibrary
     // Parent class for living creatures
     public class LivingCreature
     {
-        public LivingCreature(int id, string name, string race, int hp)
+        public LivingCreature(int id, string name, string race, double hp)
         {
             Id = id;
             Name = name;
@@ -38,7 +38,7 @@ namespace DestinationUnknownLibrary
         public int Id { get; set; }
         public string Name { get; set; }
         public string Race { get; set; }
-        public int HP { get; set; }
+        public double HP { get; set; }
     }
 
 

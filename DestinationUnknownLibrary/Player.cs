@@ -13,7 +13,7 @@ namespace DestinationUnknownLibrary
 {
 	public class Player : LivingCreature
 	{
-		public Player(int id, string name, string password, string race, string Pclass, int hp, int location, List<Item> inventory, List<int> quests)
+		public Player(int id, string name, string password, string race, string Pclass, double hp, int location, List<Item> inventory, List<int> quests)
 			: base(id, name, race, hp)
 		{
 			Id = id;

@@ -20,7 +20,7 @@ namespace DestinationUnknownLibrary
 		public static List<Mobs> Mob = new List<Mobs>();
 
 		// Constructor
-		public Mobs(int id, string name, string race, int hp, int ad, string weapon, string description, List<Item> inventory) 
+		public Mobs(int id, string name, string race, double hp, int ad, string weapon, string description, List<Item> inventory) 
 			: base(id, name, race, hp)
 		{
 			Id = id;
