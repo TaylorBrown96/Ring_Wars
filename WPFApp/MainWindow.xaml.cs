@@ -37,7 +37,7 @@ namespace WPFApp
             LoadRoomMob();
             LoadRoomExits();
 
-            TB_Dialog.Text = "Welcome to Ring Wars!";
+            TB_Dialog.Text = "Welcome to Ring Wars!\n";
         }
 
         private void LoadPlayerInv()
