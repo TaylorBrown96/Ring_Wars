@@ -328,6 +328,7 @@ namespace WinUI_Game
             this.Controls.Add(this.PB_EnemyHealth);
             this.Controls.Add(this.PB_PlayerHealth);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ring Wars";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
