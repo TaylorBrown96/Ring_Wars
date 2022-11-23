@@ -75,3 +75,28 @@ C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring
 C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\WPFLogin\obj\Debug\WPFLogin.pdb
 C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\WPFLogin\bin\Debug\RingWarsLibrary.dll
 C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\WPFLogin\bin\Debug\RingWarsLibrary.pdb
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\WPFLogin.exe.config
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\WPFLogin.exe
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\WPFLogin.pdb
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\Dapper.dll
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\RingWarsLibrary.dll
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\System.Data.SQLite.dll
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\WPFApp.exe
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\RingWarsLibrary.pdb
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\WPFApp.pdb
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\WPFApp.exe.config
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\Dapper.xml
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\bin\Debug\System.Data.SQLite.xml
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin.csproj.AssemblyReference.cache
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\MainWindow.g.cs
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\App.g.cs
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin_MarkupCompile.cache
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin_MarkupCompile.lref
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\MainWindow.baml
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin.g.resources
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin.Properties.Resources.resources
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin.csproj.GenerateResource.cache
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin.csproj.CoreCompileInputs.cache
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin.csproj.CopyComplete
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin.exe
+C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\WPFLogin\obj\Debug\WPFLogin.pdb
