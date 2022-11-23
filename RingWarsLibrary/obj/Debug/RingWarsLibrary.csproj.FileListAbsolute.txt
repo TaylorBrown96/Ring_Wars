@@ -1,0 +1,11 @@
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\bin\Debug\RingWarsLibrary.dll
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\bin\Debug\RingWarsLibrary.pdb
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\bin\Debug\Dapper.dll
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\bin\Debug\System.Data.SQLite.dll
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\bin\Debug\Dapper.xml
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\bin\Debug\System.Data.SQLite.xml
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.csproj.AssemblyReference.cache
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.csproj.CopyComplete
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.dll
+C:\Users\forth\Documents\School\6_Fall_2022\CSC-253 Advanced C# Programming\Ring_Wars-main (4)\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.pdb
