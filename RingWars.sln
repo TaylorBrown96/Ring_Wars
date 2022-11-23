@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.4.33110.190
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{A06B4076-CD7C-4B5E-B804-945C55BC647C}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFLogin", "WPFLogin\WPFLogin.csproj", "{141E23E6-8221-49DD-BD05-FA96C9C7B751}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingWarsLibrary", "RingWarsLibrary\RingWarsLibrary.csproj", "{2D6E3A88-23F8-4B79-B6FC-3EB8D879DE74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI_Game", "WinUI_Game\WinUI_Game.csproj", "{F4EB6368-73CD-4EBB-AF5C-C9ECF1523D65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI_Login", "WinUI_Login\WinUI_Login.csproj", "{6C023AC1-0997-48B5-8EFA-2CCAB21F5B04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{2D6E3A88-23F8-4B79-B6FC-3EB8D879DE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D6E3A88-23F8-4B79-B6FC-3EB8D879DE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D6E3A88-23F8-4B79-B6FC-3EB8D879DE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4EB6368-73CD-4EBB-AF5C-C9ECF1523D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EB6368-73CD-4EBB-AF5C-C9ECF1523D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EB6368-73CD-4EBB-AF5C-C9ECF1523D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EB6368-73CD-4EBB-AF5C-C9ECF1523D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C023AC1-0997-48B5-8EFA-2CCAB21F5B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C023AC1-0997-48B5-8EFA-2CCAB21F5B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C023AC1-0997-48B5-8EFA-2CCAB21F5B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C023AC1-0997-48B5-8EFA-2CCAB21F5B04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
