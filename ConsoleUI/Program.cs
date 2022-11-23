@@ -7,8 +7,10 @@
 using System;
 using System.Windows;
 using System.Runtime.InteropServices;
+using System.Threading;
 using RingWarsLibrary;
-
+using WinUI_Game;
+using WinUI_Login;
 namespace ConsoleUI
 {
     internal class Program
@@ -47,6 +49,7 @@ namespace ConsoleUI
                         LoadWPF();
                         break;
                     case "3":
+                        LoadWinUI();
                         break;
                     case "4":
                         keep_going = false;
@@ -95,6 +98,17 @@ namespace ConsoleUI
             //ShowWindow(GetConsoleWindow(), SW_HIDE);
             Application app = new Application();
             app.Run(new WPFLogin.MainWindow(player));
+        }
+        private static void LoadWinUI()
+        {
+            //ShowWindow(GetConsoleWindow(), SW_Hide);
+            var t = new Thread(() =>
+            {
+                var f = new WinUI_Login.Form1(player);
+                f.ShowDialog();
+            });
+            t.SetApartmentState(ApartmentState.STA);
+            t.Start();
         }
 
         [DllImport("kernel32.dll")]
