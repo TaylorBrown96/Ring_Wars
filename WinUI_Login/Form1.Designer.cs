@@ -89,6 +89,7 @@ namespace WinUI_Login
             this.Controls.Add(this.label1);
             this.Controls.Add(this.submitButton);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
             this.ResumeLayout(false);
             this.PerformLayout();
