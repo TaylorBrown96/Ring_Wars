@@ -9,6 +9,7 @@ using RingWarsLibrary;
 using Xunit;
 using Xunit.Sdk;
 
+
 namespace RingWarsLibrary.Tests
 {
     public class DatabaseAccessTests
@@ -33,18 +34,67 @@ namespace RingWarsLibrary.Tests
             }
             throw new NotImplementedException();
         }*/
-        [Fact]
-        public void TestPotionAccessCall()
+
+        [Theory]
+        [ClassData(typeof(ExpectedReturnValueTests))]
+        public void LoadRoomMobTest(ExpectedValueTestData<List<RingWarsLibrary.LivingCreature>> data)
         {
-            //arrange
-            List<Potions> potions = new List<Potions>(GetPotionSample());
-            //SqliteDataAccess.GetPotion("1")
-            List<Potions> result = SqliteDataAccess.GetPotion("1");
-            string expected = "health";
-
-            Assert.Equal(expected, result);
-
+            var actual = RingWarsLibrary.SqliteDataAccess.LoadRoomMob(data.Params.value);
+            Assert.Equal(data.ExpectedValue, actual);
         }
+        public struct ExpectedValueTestData<TExpected>
+        {
+            public string Name;
+            public Parameters Params;
+            public TExpected ExpectedValue;
+
+            public override string ToString()
+            {
+                return $"{this.Name}";
+            }
+        }
+
+        public struct Parameters
+        {
+            public int value;
+        }
+        public class ExpectedReturnValueTests : TheoryData<ExpectedValueTestData<List<RingWarsLibrary.LivingCreature>>>
+        {
+            public ExpectedReturnValueTests()
+            {
+                this.Add(new ExpectedValueTestData<List<RingWarsLibrary.LivingCreature>>
+                {
+                    Name = @"1",
+                    Params = new Parameters
+                    {
+                        value = 101
+                    },
+                    ExpectedValue = new List<RingWarsLibrary.LivingCreature> { }
+                });
+                this.Add(new ExpectedValueTestData<List<RingWarsLibrary.LivingCreature>>
+                {
+                    Name = @"p2",
+                    Params = new Parameters
+                    {
+                        value = 105
+                    },
+                    ExpectedValue = new List<RingWarsLibrary.LivingCreature> { }
+                });
+            }
+        }
+
+        [Fact]
+        //public void TestPotionAccessCall()
+        //{
+            //arrange
+            //List<Potions> potions = new List<Potions>(GetPotionSample());
+            //SqliteDataAccess.GetPotion("1")
+            ///List<Potions> result = SqliteDataAccess.GetPotion("1");
+            //string expected = "health";
+
+            //Assert.Equal(expected, result);
+
+        //}
         
         private List<Potions> GetPotionSample() 
         {
