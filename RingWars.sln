@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI_Game", "WinUI_Game\Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI_Login", "WinUI_Login\WinUI_Login.csproj", "{6C023AC1-0997-48B5-8EFA-2CCAB21F5B04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingWarsLibrary.Tests", "RingWarsLibrary.Tests\RingWarsLibrary.Tests.csproj", "{CC640DA8-E9EA-49DD-9DA7-5E8CFE25696F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{6C023AC1-0997-48B5-8EFA-2CCAB21F5B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C023AC1-0997-48B5-8EFA-2CCAB21F5B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C023AC1-0997-48B5-8EFA-2CCAB21F5B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC640DA8-E9EA-49DD-9DA7-5E8CFE25696F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC640DA8-E9EA-49DD-9DA7-5E8CFE25696F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC640DA8-E9EA-49DD-9DA7-5E8CFE25696F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC640DA8-E9EA-49DD-9DA7-5E8CFE25696F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
