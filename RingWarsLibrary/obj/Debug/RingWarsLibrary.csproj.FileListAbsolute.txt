@@ -20,3 +20,14 @@ C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\RingWarsLibrary\obj\Debug\RingWar
 C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\RingWarsLibrary\obj\Debug\RingWarsLibrary.csproj.CopyComplete
 C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\RingWarsLibrary\obj\Debug\RingWarsLibrary.dll
 C:\Users\Jonesk6843\Downloads\Ring_Wars-Jonesk\RingWarsLibrary\obj\Debug\RingWarsLibrary.pdb
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\bin\Debug\RingWarsLibrary.dll
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\bin\Debug\RingWarsLibrary.pdb
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\bin\Debug\Dapper.dll
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\bin\Debug\System.Data.SQLite.dll
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\bin\Debug\Dapper.xml
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\bin\Debug\System.Data.SQLite.xml
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.csproj.AssemblyReference.cache
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.csproj.CopyComplete
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.dll
+C:\Users\brownt7272\Desktop\Ring_Wars-main\Ring_Wars-main\RingWarsLibrary\obj\Debug\RingWarsLibrary.pdb

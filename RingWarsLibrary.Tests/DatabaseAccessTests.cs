@@ -89,7 +89,7 @@ namespace RingWarsLibrary.Tests
             //arrange
             //List<Potions> potions = new List<Potions>(GetPotionSample());
             //SqliteDataAccess.GetPotion("1")
-            ///List<Potions> result = SqliteDataAccess.GetPotion("1");
+            ///List<Potions> result = SqliteDataAccess.GetPotion("102");
             //string expected = "health";
 
             //Assert.Equal(expected, result);
