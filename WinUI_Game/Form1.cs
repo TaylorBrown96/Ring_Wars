@@ -12,24 +12,41 @@ namespace WinUI_Game
 {
     public partial class Form1 : Form
     {
+        // Declaring global variables
         public Player player = null;
         public int roomIndex = 0;
         public double mobHP = 0;
+
         public Form1(Player user)
         {
             InitializeComponent();
 
+            // Load Player and location
             player = user;
             roomIndex = Rooms.Room.FindIndex(a => a.Room_ID == player.Location);
 
+            // Calling load information
             LoadPlayerInv();
             LoadRoomInfo();
             LoadRoomMob();
             LoadRoomExits();
 
+            // Adding introduction message to TextBox
             TB_Dialog.Text = "Welcome to Ring Wars!\n";
         }
+        
+        private void TB_Dialog_TextChanged(object sender, EventArgs e)
+        {
+            // Auto scrolling player log
+            TB_Dialog.ScrollToCaret();
+        }
 
+        /* Loading programs
+         * PlayerInventory
+         * RoomInformation
+         * RoomMob
+         * RoomExits
+         */
         private void LoadPlayerInv()
         {
             LB_PlayerInv.Items.Clear();
@@ -92,81 +109,17 @@ namespace WinUI_Game
             }
         }
 
-        private void Btn_RoomToPlayer_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (Rooms.Room[roomIndex].Loot[LB_RoomInv.SelectedIndex].Id >= 200 && Rooms.Room[roomIndex].Loot[LB_RoomInv.SelectedIndex].Id <= 299)
-                {
-                    player.Inventory.Insert(0, Rooms.Room[roomIndex].Loot[LB_RoomInv.SelectedIndex]);
-                }
-                else
-                {
-                    player.Inventory.Add(Rooms.Room[roomIndex].Loot[LB_RoomInv.SelectedIndex]);
-                }
-
-                Rooms.Room[roomIndex].Loot.RemoveAt(LB_RoomInv.SelectedIndex);
-                LB_RoomInv.Items.RemoveAt(LB_RoomInv.SelectedIndex);
-
-                LoadPlayerInv();
-            }
-            catch
-            {
-                MessageBox.Show("Please choose an Item from the room's inventory", "Error!");
-            }
-        }
-
-        private void Btn_PlayerToRoom_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Rooms.Room[roomIndex].Loot.Add(player.Inventory[LB_PlayerInv.SelectedIndex]);
-                player.Inventory.RemoveAt(LB_PlayerInv.SelectedIndex);
-                LB_PlayerInv.Items.RemoveAt(LB_PlayerInv.SelectedIndex);
-
-                LoadRoomInfo();
-            }
-            catch
-            {
-                MessageBox.Show("Please choose an Item from your inventory", "Error!");
-            }
-        }
-
-        private void Btn_ExamineItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Item item = player.Inventory[LB_PlayerInv.SelectedIndex];
-                Weapons weapon = null;
-                if (item.Id >= 200 && item.Id <= 299)
-                {
-                    weapon = (Weapons)item;
-                }
-
-                if (weapon == null)
-                {
-                    TB_Dialog.AppendText("\n\nItem Stats:" +
-                                         "\n\tItem Name: " + item.Name +
-                                         "\n\tItem Description: " + item.Description +
-                                         "\n\tItem Value: " + item.Price);
-                }
-                else
-                {
-                    TB_Dialog.AppendText("\n\nWeapon Stats:" +
-                                         "\n\tWeapon Name: " + item.Name +
-                                         "\n\tWeapon Description: " + item.Description +
-                                         "\n\tWeapon Value: " + item.Price +
-                                         "\n\tWeapon Attack Damage: " + weapon.Damage +
-                                         "\n\tWeapon Damage Type: " + weapon.DmgType);
-                }
-
-            }
-            catch
-            {
-                MessageBox.Show("Please choose an Item from your inventory", "Error!");
-            }
-        }
-
+        /*Button Clicks
+        * North
+        * East
+        * South
+        * West
+        * Attack
+        * UseItem
+        * ExaamineItem
+        * PlayerToRoom
+        * RoomToPlayer
+        */
         private void Btn_North_Click_1(object sender, EventArgs e)
         {
             if (Rooms.Room[roomIndex].Exit[1] != -1)
@@ -286,44 +239,6 @@ namespace WinUI_Game
             TB_Dialog.AppendText("Press Enter to exit the program.");
             MessageBox.Show("You have met your demise", "You Died!");
             this.Close();
-        }
-
-        private void Btn_UseItem_Click(object sender, EventArgs e)
-        {
-            Potions item;
-
-            try
-            {
-                item = (Potions)player.Inventory[LB_PlayerInv.SelectedIndex];
-
-                if (player.HP == 100)
-                {
-                    MessageBox.Show("You can't use that item, you're already max health", "Error");
-                }
-                if (player.HP + item.Effects >= 101)
-                {
-                    player.HP = 100;
-                    player.Inventory.RemoveAt(LB_PlayerInv.SelectedIndex);
-                    LB_PlayerInv.Items.RemoveAt(LB_PlayerInv.SelectedIndex);
-                    PB_PlayerHealth.Value = 100;
-                }
-                else
-                {
-                    player.HP += item.Effects;
-                    player.Inventory.RemoveAt(LB_PlayerInv.SelectedIndex);
-                    LB_PlayerInv.Items.RemoveAt(LB_PlayerInv.SelectedIndex);
-                    PB_PlayerHealth.Value = (int) player.HP;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("You can't use that item like that.", "Error");
-            }
-        }
-
-        private void TB_Dialog_TextChanged(object sender, EventArgs e)
-        {
-            TB_Dialog.ScrollToCaret();
         }
 
         private void Btn_UseItem_Click_1(object sender, EventArgs e)

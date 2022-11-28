@@ -55,46 +55,56 @@ namespace WinUI_Game
             this.L_WExit = new System.Windows.Forms.Label();
             this.L_EExit = new System.Windows.Forms.Label();
             this.TB_Dialog = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_PlayerHealth
             // 
             this.PB_PlayerHealth.ForeColor = System.Drawing.Color.Red;
-            this.PB_PlayerHealth.Location = new System.Drawing.Point(12, 364);
+            this.PB_PlayerHealth.Location = new System.Drawing.Point(18, 672);
+            this.PB_PlayerHealth.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.PB_PlayerHealth.Name = "PB_PlayerHealth";
-            this.PB_PlayerHealth.Size = new System.Drawing.Size(240, 23);
+            this.PB_PlayerHealth.Size = new System.Drawing.Size(360, 42);
             this.PB_PlayerHealth.TabIndex = 1;
             // 
             // PB_EnemyHealth
             // 
             this.PB_EnemyHealth.ForeColor = System.Drawing.Color.Chartreuse;
-            this.PB_EnemyHealth.Location = new System.Drawing.Point(12, 409);
+            this.PB_EnemyHealth.Location = new System.Drawing.Point(18, 755);
+            this.PB_EnemyHealth.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.PB_EnemyHealth.Name = "PB_EnemyHealth";
-            this.PB_EnemyHealth.Size = new System.Drawing.Size(240, 23);
+            this.PB_EnemyHealth.Size = new System.Drawing.Size(360, 42);
             this.PB_EnemyHealth.TabIndex = 2;
             // 
             // LB_PlayerInv
             // 
             this.LB_PlayerInv.FormattingEnabled = true;
-            this.LB_PlayerInv.Location = new System.Drawing.Point(422, 167);
+            this.LB_PlayerInv.ItemHeight = 24;
+            this.LB_PlayerInv.Location = new System.Drawing.Point(633, 308);
+            this.LB_PlayerInv.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.LB_PlayerInv.Name = "LB_PlayerInv";
-            this.LB_PlayerInv.Size = new System.Drawing.Size(156, 147);
+            this.LB_PlayerInv.Size = new System.Drawing.Size(232, 268);
             this.LB_PlayerInv.TabIndex = 3;
             // 
             // LB_RoomInv
             // 
             this.LB_RoomInv.FormattingEnabled = true;
-            this.LB_RoomInv.Location = new System.Drawing.Point(662, 167);
+            this.LB_RoomInv.ItemHeight = 24;
+            this.LB_RoomInv.Location = new System.Drawing.Point(993, 308);
+            this.LB_RoomInv.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.LB_RoomInv.Name = "LB_RoomInv";
-            this.LB_RoomInv.Size = new System.Drawing.Size(156, 147);
+            this.LB_RoomInv.Size = new System.Drawing.Size(232, 268);
             this.LB_RoomInv.TabIndex = 4;
             // 
             // Btn_North
             // 
-            this.Btn_North.Location = new System.Drawing.Point(60, 21);
+            this.Btn_North.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_North.Location = new System.Drawing.Point(91, 52);
+            this.Btn_North.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Btn_North.Name = "Btn_North";
-            this.Btn_North.Size = new System.Drawing.Size(25, 23);
+            this.Btn_North.Size = new System.Drawing.Size(39, 39);
             this.Btn_North.TabIndex = 5;
             this.Btn_North.Text = "↑";
             this.Btn_North.UseVisualStyleBackColor = true;
@@ -102,9 +112,11 @@ namespace WinUI_Game
             // 
             // Btn_East
             // 
-            this.Btn_East.Location = new System.Drawing.Point(82, 42);
+            this.Btn_East.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_East.Location = new System.Drawing.Point(126, 93);
+            this.Btn_East.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Btn_East.Name = "Btn_East";
-            this.Btn_East.Size = new System.Drawing.Size(31, 23);
+            this.Btn_East.Size = new System.Drawing.Size(44, 32);
             this.Btn_East.TabIndex = 6;
             this.Btn_East.Text = "→";
             this.Btn_East.UseVisualStyleBackColor = true;
@@ -112,9 +124,11 @@ namespace WinUI_Game
             // 
             // Btn_West
             // 
-            this.Btn_West.Location = new System.Drawing.Point(32, 42);
+            this.Btn_West.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_West.Location = new System.Drawing.Point(54, 93);
+            this.Btn_West.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Btn_West.Name = "Btn_West";
-            this.Btn_West.Size = new System.Drawing.Size(31, 23);
+            this.Btn_West.Size = new System.Drawing.Size(41, 32);
             this.Btn_West.TabIndex = 7;
             this.Btn_West.Text = "←";
             this.Btn_West.UseVisualStyleBackColor = true;
@@ -122,9 +136,11 @@ namespace WinUI_Game
             // 
             // Btn_South
             // 
-            this.Btn_South.Location = new System.Drawing.Point(60, 63);
+            this.Btn_South.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_South.Location = new System.Drawing.Point(91, 124);
+            this.Btn_South.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Btn_South.Name = "Btn_South";
-            this.Btn_South.Size = new System.Drawing.Size(25, 23);
+            this.Btn_South.Size = new System.Drawing.Size(38, 35);
             this.Btn_South.TabIndex = 8;
             this.Btn_South.Text = "↓";
             this.Btn_South.UseVisualStyleBackColor = true;
@@ -132,9 +148,11 @@ namespace WinUI_Game
             // 
             // Btn_Attack
             // 
-            this.Btn_Attack.Location = new System.Drawing.Point(276, 383);
+            this.Btn_Attack.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Attack.Location = new System.Drawing.Point(414, 707);
+            this.Btn_Attack.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Btn_Attack.Name = "Btn_Attack";
-            this.Btn_Attack.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Attack.Size = new System.Drawing.Size(113, 42);
             this.Btn_Attack.TabIndex = 9;
             this.Btn_Attack.Text = "Attack";
             this.Btn_Attack.UseVisualStyleBackColor = true;
@@ -142,9 +160,11 @@ namespace WinUI_Game
             // 
             // Btn_UseItem
             // 
-            this.Btn_UseItem.Location = new System.Drawing.Point(582, 215);
+            this.Btn_UseItem.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_UseItem.Location = new System.Drawing.Point(873, 397);
+            this.Btn_UseItem.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Btn_UseItem.Name = "Btn_UseItem";
-            this.Btn_UseItem.Size = new System.Drawing.Size(75, 23);
+            this.Btn_UseItem.Size = new System.Drawing.Size(113, 42);
             this.Btn_UseItem.TabIndex = 13;
             this.Btn_UseItem.Text = "Inspect";
             this.Btn_UseItem.UseVisualStyleBackColor = true;
@@ -152,9 +172,11 @@ namespace WinUI_Game
             // 
             // Btn_ExamineItem
             // 
-            this.Btn_ExamineItem.Location = new System.Drawing.Point(581, 186);
+            this.Btn_ExamineItem.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ExamineItem.Location = new System.Drawing.Point(870, 342);
+            this.Btn_ExamineItem.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Btn_ExamineItem.Name = "Btn_ExamineItem";
-            this.Btn_ExamineItem.Size = new System.Drawing.Size(75, 23);
+            this.Btn_ExamineItem.Size = new System.Drawing.Size(113, 42);
             this.Btn_ExamineItem.TabIndex = 14;
             this.Btn_ExamineItem.Text = "Use Item";
             this.Btn_ExamineItem.UseVisualStyleBackColor = true;
@@ -162,9 +184,11 @@ namespace WinUI_Game
             // 
             // Btn_PlayerToRoom
             // 
-            this.Btn_PlayerToRoom.Location = new System.Drawing.Point(582, 244);
+            this.Btn_PlayerToRoom.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_PlayerToRoom.Location = new System.Drawing.Point(873, 450);
+            this.Btn_PlayerToRoom.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Btn_PlayerToRoom.Name = "Btn_PlayerToRoom";
-            this.Btn_PlayerToRoom.Size = new System.Drawing.Size(75, 23);
+            this.Btn_PlayerToRoom.Size = new System.Drawing.Size(113, 42);
             this.Btn_PlayerToRoom.TabIndex = 15;
             this.Btn_PlayerToRoom.Text = "→";
             this.Btn_PlayerToRoom.UseVisualStyleBackColor = true;
@@ -172,9 +196,11 @@ namespace WinUI_Game
             // 
             // Btn_RoomToPlayer
             // 
-            this.Btn_RoomToPlayer.Location = new System.Drawing.Point(582, 273);
+            this.Btn_RoomToPlayer.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_RoomToPlayer.Location = new System.Drawing.Point(873, 504);
+            this.Btn_RoomToPlayer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Btn_RoomToPlayer.Name = "Btn_RoomToPlayer";
-            this.Btn_RoomToPlayer.Size = new System.Drawing.Size(75, 23);
+            this.Btn_RoomToPlayer.Size = new System.Drawing.Size(113, 42);
             this.Btn_RoomToPlayer.TabIndex = 16;
             this.Btn_RoomToPlayer.Text = "←";
             this.Btn_RoomToPlayer.UseVisualStyleBackColor = true;
@@ -186,9 +212,12 @@ namespace WinUI_Game
             this.groupBox1.Controls.Add(this.Btn_North);
             this.groupBox1.Controls.Add(this.Btn_West);
             this.groupBox1.Controls.Add(this.Btn_South);
-            this.groupBox1.Location = new System.Drawing.Point(422, 34);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(633, 63);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(144, 107);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.groupBox1.Size = new System.Drawing.Size(216, 198);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Movement";
@@ -196,115 +225,152 @@ namespace WinUI_Game
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 348);
+            this.label1.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 642);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(109, 24);
             this.label1.TabIndex = 18;
             this.label1.Text = "Player Health";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 393);
+            this.label2.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 726);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(71, 24);
             this.label2.TabIndex = 19;
             this.label2.Text = "Enemy: ";
             // 
             // L_EnemyName
             // 
             this.L_EnemyName.AutoSize = true;
-            this.L_EnemyName.Location = new System.Drawing.Point(51, 393);
+            this.L_EnemyName.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_EnemyName.Location = new System.Drawing.Point(77, 726);
+            this.L_EnemyName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.L_EnemyName.Name = "L_EnemyName";
-            this.L_EnemyName.Size = new System.Drawing.Size(33, 13);
+            this.L_EnemyName.Size = new System.Drawing.Size(49, 24);
             this.L_EnemyName.TabIndex = 20;
             this.L_EnemyName.Text = "name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(645, 49);
+            this.label3.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(967, 90);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.Size = new System.Drawing.Size(57, 24);
             this.label3.TabIndex = 21;
             this.label3.Text = "North:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(645, 78);
+            this.label4.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(967, 144);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(57, 24);
             this.label4.TabIndex = 22;
             this.label4.Text = "South:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(645, 107);
+            this.label5.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(967, 198);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(46, 24);
             this.label5.TabIndex = 23;
             this.label5.Text = "East:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(645, 138);
+            this.label6.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(967, 255);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(51, 24);
             this.label6.TabIndex = 24;
             this.label6.Text = "West:";
             // 
             // L_NExit
             // 
             this.L_NExit.AutoSize = true;
-            this.L_NExit.Location = new System.Drawing.Point(681, 49);
+            this.L_NExit.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_NExit.Location = new System.Drawing.Point(1021, 90);
+            this.L_NExit.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.L_NExit.Name = "L_NExit";
-            this.L_NExit.Size = new System.Drawing.Size(32, 13);
+            this.L_NExit.Size = new System.Drawing.Size(53, 24);
             this.L_NExit.TabIndex = 25;
             this.L_NExit.Text = "NExit";
             // 
             // L_SExit
             // 
             this.L_SExit.AutoSize = true;
-            this.L_SExit.Location = new System.Drawing.Point(681, 78);
+            this.L_SExit.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_SExit.Location = new System.Drawing.Point(1021, 144);
+            this.L_SExit.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.L_SExit.Name = "L_SExit";
-            this.L_SExit.Size = new System.Drawing.Size(31, 13);
+            this.L_SExit.Size = new System.Drawing.Size(50, 24);
             this.L_SExit.TabIndex = 26;
             this.L_SExit.Text = "SExit";
             // 
             // L_WExit
             // 
             this.L_WExit.AutoSize = true;
-            this.L_WExit.Location = new System.Drawing.Point(677, 138);
+            this.L_WExit.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_WExit.Location = new System.Drawing.Point(1014, 255);
+            this.L_WExit.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.L_WExit.Name = "L_WExit";
-            this.L_WExit.Size = new System.Drawing.Size(35, 13);
+            this.L_WExit.Size = new System.Drawing.Size(56, 24);
             this.L_WExit.TabIndex = 27;
             this.L_WExit.Text = "WExit";
             // 
             // L_EExit
             // 
             this.L_EExit.AutoSize = true;
-            this.L_EExit.Location = new System.Drawing.Point(677, 107);
+            this.L_EExit.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_EExit.Location = new System.Drawing.Point(1014, 198);
+            this.L_EExit.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.L_EExit.Name = "L_EExit";
-            this.L_EExit.Size = new System.Drawing.Size(31, 13);
+            this.L_EExit.Size = new System.Drawing.Size(51, 24);
             this.L_EExit.TabIndex = 28;
             this.L_EExit.Text = "EExit";
             // 
             // TB_Dialog
             // 
-            this.TB_Dialog.Location = new System.Drawing.Point(12, 12);
+            this.TB_Dialog.Location = new System.Drawing.Point(18, 21);
+            this.TB_Dialog.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.TB_Dialog.Name = "TB_Dialog";
-            this.TB_Dialog.Size = new System.Drawing.Size(382, 333);
+            this.TB_Dialog.Size = new System.Drawing.Size(571, 610);
             this.TB_Dialog.TabIndex = 29;
             this.TB_Dialog.Text = "";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WinUI_Game.Properties.Resources.Ring_Wars_TitleCard;
+            this.pictureBox1.ImageLocation = "";
+            this.pictureBox1.Location = new System.Drawing.Point(723, 660);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(463, 119);
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 440);
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1245, 812);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TB_Dialog);
             this.Controls.Add(this.L_EExit);
             this.Controls.Add(this.L_WExit);
@@ -327,10 +393,15 @@ namespace WinUI_Game
             this.Controls.Add(this.LB_PlayerInv);
             this.Controls.Add(this.PB_EnemyHealth);
             this.Controls.Add(this.PB_PlayerHealth);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ring Wars";
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,6 +434,7 @@ namespace WinUI_Game
         private System.Windows.Forms.Label L_WExit;
         private System.Windows.Forms.Label L_EExit;
         private System.Windows.Forms.RichTextBox TB_Dialog;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
