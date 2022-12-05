@@ -18,12 +18,20 @@ namespace WinUI_Login
         {
             InitializeComponent();
             player = user;
+            usernameLabel.Text = player.Name;
         }
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            var game = new WinUI_Game.Form1(player);
-            game.Show();
+            if (player.Password == passwordTextBox.Text)
+            {
+                var game = new WinUI_Game.Form1(player);
+                game.Show();
+            }
+            else
+            {
+                MessageBox.Show("That password is invalid.", "Error");
+            }      
         }
     }
 }
