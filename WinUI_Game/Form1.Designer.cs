@@ -357,7 +357,7 @@ namespace WinUI_Game
             this.pictureBox1.Image = global::WinUI_Game.Properties.Resources.Ring_Wars_TitleCard;
             this.pictureBox1.ImageLocation = "";
             this.pictureBox1.Location = new System.Drawing.Point(723, 660);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(463, 119);
             this.pictureBox1.TabIndex = 30;
